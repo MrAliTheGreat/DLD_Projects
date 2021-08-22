@@ -1,0 +1,329 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA3
+vand_gate
+Z1 I[OcNZLDZ<Iee@4CKMRPhB1
+Z2 V:M@C`_zlhA2KgP;gJfC;12
+Z3 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA3_Main
+Z4 w1573049068
+Z5 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3_Main/CA3_Verilog.v
+Z6 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3_Main/CA3_Verilog.v
+Z7 L0 232
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s108 1573049071.144000
+Z10 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3_Main/CA3_Verilog.v|
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3_Main/CA3_Verilog.v|
+Z12 o-work work -O0
+Z13 !s100 n^KGj3R<a91lL<e>M_<BI1
+!i10b 1
+!s85 0
+!s101 -O0
+vcomparator
+Z14 !s100 P[2_=X2c4FBFEIK0]LTm22
+Z15 I_5@WaL^]lE[`g7ZXVn<?^1
+Z16 VCAJSO6kBDL?fPXQ9VG4VM0
+R3
+Z17 w1573045610
+R5
+R6
+Z18 L0 206
+R8
+r1
+31
+Z19 !s108 1573045613.305000
+R10
+R11
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vcomparator_behavioural
+!i10b 1
+!s100 DQJLozg>L^RYba<UcPbfU2
+IV=d;9;F0MdbXfYVHe;KMa0
+Z20 V<jCL]W8MF?5:[YBR?g`Ob2
+R3
+Z21 w1573075943
+R5
+R6
+L0 278
+R8
+r1
+!s85 0
+31
+Z22 !s108 1573075968.279000
+Z23 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3_Main/CA3_Verilog.v|
+R11
+!s101 -O0
+R12
+vcomparator_gate
+!i10b 1
+!s100 fDUdz0MCK:2LW>H[>GYh;1
+IB_K0GhVG1G<P^YX9N[_SZ3
+Z24 V[7>Jn8i`9Y<49>OUZJjmM2
+R3
+R21
+R5
+R6
+L0 211
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vcomplement
+!i10b 1
+!s100 c8WYF]j6KnJ^5m_J6B2Ja0
+IMd2HI1H>e6CebX[OLj8Ej3
+Z25 V[j>Zej<ZVRDeY>j<b>;k62
+R3
+R21
+R5
+R6
+L0 24
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vcomplement_assign
+!i10b 1
+!s100 Wa8[jgH8:C;AlRFY7I]VM1
+I>Yj[_@G7AT[UO_F4k=o1g3
+Z26 VBQFOzj2lfJ]Pj3<NM`o^b1
+R3
+R21
+R5
+R6
+L0 248
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vencoder
+!i10b 1
+!s100 1JiPVP3U]NY>gYljm<NdF0
+I14Eh<2ZdTj=WQ_6zg8^gG1
+Z27 V;i6IhnXJ32P7]=YB_PBUe2
+R3
+R21
+R5
+R6
+L0 67
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+veq_ae_d_comparator
+!i10b 1
+!s100 P:<lboIEJ=9R5O;CUAcdV2
+I3HooNO<BUAa_`;UW;Ak[63
+Z28 V=AB39TEz4kYJWL8OB^Sh93
+R3
+R21
+R5
+R6
+L0 115
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vequal_comp
+!i10b 1
+!s100 I_Zg<8U`zGzi6V^XJ_`n@2
+IV;bMif>JSgF7BLIo;209b2
+Z29 Vcd672ALj6oeJWnB2PjR2Y0
+R3
+R21
+R5
+R6
+L0 51
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vgt_comp_component
+!i10b 1
+!s100 gn>Q[?<?R;`>U0EadCUXa2
+IWS6c9GQHo]UzZTo8:EGHj2
+Z30 VPmVE84l:BWS0GgOz9_J;g1
+R3
+R21
+R5
+R6
+L0 157
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vgt_comparator
+!i10b 1
+!s100 gOh11S63a:cY;>TGzeMSJ2
+IF?m;zoVFNKf8]O^miTHdi3
+Z31 Vh9LT^L4mb1]ljUa2GXWha3
+R3
+R21
+R5
+R6
+L0 178
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vincrementer
+!i10b 1
+Z32 !s100 ;^Kke=i<DBW`m2EA3mB5:3
+Z33 ISQ?GUkQ_UZ9D^9I;Y7EX02
+Z34 VOUTObg@Fio]h<z?>kKE4B3
+R3
+R21
+R5
+R6
+L0 4
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vincrementer_assign
+Z35 !s100 anQLQSFJ8kAN36dS^ezmB3
+Z36 ImoGND=B13IO03VGGHO<T12
+Z37 Vf<Hg0MA50gRb<KDVAA]JH0
+R3
+Z38 w1573057555
+R5
+R6
+Z39 L0 220
+R8
+r1
+31
+Z40 !s108 1573057558.142000
+R10
+R11
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vincrementer_assign_component
+!i10b 1
+!s100 OXVMm<X5YX=3efOn?PRY:1
+IcYP[X1hLAJ[>jlD`0<H1;2
+Z41 V:I`:2_df[JlWVRR>C^<8O0
+R3
+R21
+R5
+R6
+R7
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vmagnitude_diff
+Z42 IhK5F9KLY?G=5<`8@8Xk:o3
+Z43 V3fdN05o6]9Hcn=OgEI[Xf2
+R3
+Z44 w1572993726
+R5
+R6
+L0 58
+R8
+r1
+31
+Z45 !s108 1572993730.185000
+R10
+R11
+R12
+Z46 !s100 o35=<BHh>fMnDD4^<HY861
+!i10b 1
+!s85 0
+!s101 -O0
+vmagnitude_diff_component
+!i10b 1
+!s100 aG92^KMLME:QQWb=NW4:n0
+I4CgdQePMA@ak2V0h1lS;Q2
+Z47 VdPRN0CZC?:iUX6GdIbFA_0
+R3
+R21
+R5
+R6
+L0 97
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+vtestTB
+!i10b 1
+!s100 <SdhgT1_E`T7QC^0c>mH[2
+I]6=b::8;Dd5O4Og=<XSn@0
+Z48 Vj45]H_g<gC]3[1?fkT`JM2
+R3
+R21
+R5
+R6
+L0 335
+R8
+r1
+!s85 0
+31
+R22
+R23
+R11
+!s101 -O0
+R12
+Z49 ntest@t@b

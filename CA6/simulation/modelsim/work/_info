@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA6
+vCA6_Quartus
+!i10b 1
+Z1 !s100 M<5GP_`6dJ[U?CXSWTUX]1
+Z2 I4IflBm23R8Z5SG;W8oiFd0
+Z3 VPb15U<O`F?8<@3nW55oJ?2
+Z4 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA6\simulation\modelsim
+Z5 w1578086313
+Z6 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/simulation/modelsim/CA6_Quartus.vo
+Z7 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/simulation/modelsim/CA6_Quartus.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1578116415.608000
+!s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/simulation/modelsim/CA6_Quartus.vo|
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/simulation/modelsim/CA6_Quartus.vo|
+!s101 -O0
+Z10 o-work work -O0
+Z11 n@c@a6_@quartus
+vFinalTestBench
+Z12 !s100 GfX8_fQ3DZ@:bb1MFP>OS2
+Z13 I6V6B4ln@Q5YPbam=b98W81
+Z14 V:e^fCfG<gA;616T:44CR?2
+R4
+Z15 w1578087552
+Z16 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/simulation/modelsim/FinalTestBench.v
+Z17 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/simulation/modelsim/FinalTestBench.v
+L0 3
+R8
+r1
+31
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/simulation/modelsim/FinalTestBench.v|
+R10
+Z19 n@final@test@bench
+!i10b 1
+!s85 0
+Z20 !s108 1578116415.537000
+Z21 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/simulation/modelsim/FinalTestBench.v|
+!s101 -O0

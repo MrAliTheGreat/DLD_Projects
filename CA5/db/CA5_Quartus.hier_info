@@ -1,0 +1,181 @@
+|CA5_Quartus
+smbs_output[0] <= DataPath:inst3.smbs_output[0]
+smbs_output[1] <= DataPath:inst3.smbs_output[1]
+smbs_output[2] <= DataPath:inst3.smbs_output[2]
+smbs_output[3] <= DataPath:inst3.smbs_output[3]
+smbs_output[4] <= DataPath:inst3.smbs_output[4]
+smbs_output[5] <= DataPath:inst3.smbs_output[5]
+smbs_output[6] <= DataPath:inst3.smbs_output[6]
+smbs_output[7] <= DataPath:inst3.smbs_output[7]
+smbs_output[8] <= DataPath:inst3.smbs_output[8]
+smbs_output[9] <= DataPath:inst3.smbs_output[9]
+smbs_output[10] <= DataPath:inst3.smbs_output[10]
+smbs_output[11] <= DataPath:inst3.smbs_output[11]
+smbs_output[12] <= DataPath:inst3.smbs_output[12]
+smbs_output[13] <= DataPath:inst3.smbs_output[13]
+smbs_output[14] <= DataPath:inst3.smbs_output[14]
+smbs_output[15] <= DataPath:inst3.smbs_output[15]
+serIn => DataPath:inst3.serIn
+serIn => Controller:inst.serIn
+spacer => DataPath:inst3.spacer
+spacer => Controller:inst.spacer
+Clock => DataPath:inst3.clk
+Clock => Controller:inst.clk
+reset => DataPath:inst3.rst
+
+
+|CA5_Quartus|DataPath:inst3
+serIn => serIn.IN2
+spacer => ~NO_FANOUT~
+clk => clk.IN2
+rst => rst.IN2
+Sreg1_en => Sreg1_en.IN1
+Sreg2_en => Sreg2_en.IN1
+send_to_smbs => send_to_smbs.IN1
+size_chunk[0] <= SReg6:size_chunk_Sreg.port5
+size_chunk[1] <= SReg6:size_chunk_Sreg.port5
+size_chunk[2] <= SReg6:size_chunk_Sreg.port4
+size_chunk[3] <= SReg6:size_chunk_Sreg.port4
+size_chunk[4] <= SReg6:size_chunk_Sreg.port4
+size_chunk[5] <= SReg6:size_chunk_Sreg.port4
+smbs_output[0] <= smbs:cut_smbs.port3
+smbs_output[1] <= smbs:cut_smbs.port3
+smbs_output[2] <= smbs:cut_smbs.port3
+smbs_output[3] <= smbs:cut_smbs.port3
+smbs_output[4] <= smbs:cut_smbs.port3
+smbs_output[5] <= smbs:cut_smbs.port3
+smbs_output[6] <= smbs:cut_smbs.port3
+smbs_output[7] <= smbs:cut_smbs.port3
+smbs_output[8] <= smbs:cut_smbs.port3
+smbs_output[9] <= smbs:cut_smbs.port3
+smbs_output[10] <= smbs:cut_smbs.port3
+smbs_output[11] <= smbs:cut_smbs.port3
+smbs_output[12] <= smbs:cut_smbs.port3
+smbs_output[13] <= smbs:cut_smbs.port3
+smbs_output[14] <= smbs:cut_smbs.port3
+smbs_output[15] <= smbs:cut_smbs.port3
+
+
+|CA5_Quartus|DataPath:inst3|SReg6:address_finder_Sreg
+en => Q[5].ENA
+serIn => Q[5].DATAIN
+clk => Q[5].CLK
+rst => Q[5].ACLR
+Q_port[0] <= <GND>
+Q_port[1] <= <GND>
+Q_port[2] <= <GND>
+Q_port[3] <= <GND>
+Q_line[0] <= <GND>
+Q_line[1] <= Q[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CA5_Quartus|DataPath:inst3|SReg6:size_chunk_Sreg
+en => Q[5].ENA
+serIn => Q[5].DATAIN
+clk => Q[5].CLK
+rst => Q[5].ACLR
+Q_port[0] <= <GND>
+Q_port[1] <= <GND>
+Q_port[2] <= <GND>
+Q_port[3] <= <GND>
+Q_line[0] <= <GND>
+Q_line[1] <= Q[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CA5_Quartus|DataPath:inst3|smbs:cut_smbs
+serIn => L_output.DATAB
+serIn => L_output.DATAB
+serIn => L_output.DATAB
+serIn => L_output.DATAB
+P_select[0] => L_output.OUTPUTSELECT
+P_select[0] => L_output.OUTPUTSELECT
+P_select[0] => L_output.OUTPUTSELECT
+P_select[0] => L_output.OUTPUTSELECT
+P_select[1] => L_output.OUTPUTSELECT
+P_select[1] => L_output.OUTPUTSELECT
+P_select[1] => L_output.OUTPUTSELECT
+P_select[1] => L_output.OUTPUTSELECT
+P_select[2] => L_output.OUTPUTSELECT
+P_select[2] => L_output.OUTPUTSELECT
+P_select[2] => L_output.OUTPUTSELECT
+P_select[2] => L_output.OUTPUTSELECT
+P_select[3] => L_output.OUTPUTSELECT
+P_select[3] => L_output.OUTPUTSELECT
+P_select[3] => L_output.OUTPUTSELECT
+P_select[3] => L_output.OUTPUTSELECT
+L_select[0] => Decoder0.IN1
+L_select[1] => Decoder0.IN0
+L_output[0] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[1] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[2] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[3] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[4] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[5] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[6] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[7] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[8] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[9] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[10] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[11] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[12] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[13] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[14] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+L_output[15] <= L_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CA5_Quartus|Controller:inst
+size_chunk[5] => counter.DATAB
+size_chunk[4] => counter.DATAB
+size_chunk[3] => counter.DATAB
+size_chunk[2] => counter.DATAB
+size_chunk[1] => counter.DATAB
+size_chunk[0] => counter.DATAB
+spacer => Selector0.IN4
+spacer => Selector3.IN4
+serIn => ns.OUTPUTSELECT
+serIn => ns.OUTPUTSELECT
+serIn => ns.OUTPUTSELECT
+serIn => ns.OUTPUTSELECT
+serIn => ns.OUTPUTSELECT
+serIn => send_to_SMBS~reg0.DATAIN
+clk => send_to_SMBS~reg0.CLK
+clk => address_Sreg_en~reg0.CLK
+clk => size_chunk_Sreg_en~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+clk => counter[26].CLK
+clk => counter[27].CLK
+clk => counter[28].CLK
+clk => counter[29].CLK
+clk => counter[30].CLK
+clk => counter[31].CLK
+clk => ns~6.DATAIN
+address_Sreg_en <= address_Sreg_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
+size_chunk_Sreg_en <= size_chunk_Sreg_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
+send_to_SMBS <= send_to_SMBS~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

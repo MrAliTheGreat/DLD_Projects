@@ -1,0 +1,47 @@
+{C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/ShiftRegister_Verilog.sv} {1 {vlog -work work -sv {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/ShiftRegister_Verilog.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module cross_coupled_nor
+-- Compiling module clocked_d_latch
+-- Compiling module multiplexer
+-- Compiling module D_flipflop
+-- Compiling module six_bit_shift_register
+
+Top level modules:
+	six_bit_shift_register
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/Mux.sv} {1 {vlog -work work -sv {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/Mux.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module multiplexer
+
+Top level modules:
+	multiplexer
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/Sreg6.sv} {1 {vlog -work work -sv {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/Sreg6.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SReg6
+
+Top level modules:
+	SReg6
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/SMBS_Verilog.sv} {1 {vlog -work work -sv {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/SMBS_Verilog.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module smbs
+
+Top level modules:
+	smbs
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/Controller.sv} {1 {vlog -work work -sv {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/Controller.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/Sreg6_2.sv} {1 {vlog -work work -sv {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA4/Sreg6_2.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SReg6
+
+Top level modules:
+	SReg6
+
+} {} {}}

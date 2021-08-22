@@ -1,0 +1,181 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA3
+veq_ae_comparator
+Z1 !s100 e0lh9CKW`RXbk?]YbjCTa1
+Z2 IBmhf0U5IP9J:3PR<VTY[M0
+Z3 Vk^QE88cemjklTNo=JfgFh2
+Z4 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA3
+Z5 w1572899657
+Z6 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3/CA3_Verilog.v
+Z7 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3/CA3_Verilog.v
+L0 18
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s108 1572899660.597000
+Z10 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3/CA3_Verilog.v|
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3/CA3_Verilog.v|
+Z12 o-work work -O0
+!i10b 1
+!s85 0
+!s101 -O0
+veq_ae_Comparator
+Z13 I3fmLke7>hAU5^E?0GMhVG3
+Z14 VUBUda350E2e1H9IQLQl>?2
+R4
+Z15 w1572899028
+R6
+R7
+L0 17
+R8
+r1
+31
+Z16 !s108 1572899031.358000
+R10
+R11
+R12
+Z17 neq_ae_@comparator
+Z18 !s100 I?T>?DNFL7=`OVgoSfSBM2
+!i10b 1
+!s85 0
+!s101 -O0
+vEQ_AE_Comparator
+!i10b 1
+Z19 !s100 g6joMz3QHgPcYVoZZ<R9C1
+Z20 IRmF@?N>@53f_m=ZP?ZIjK3
+Z21 VPhCQ8Lc3^J91L9f4bYA;R1
+R4
+Z22 w1572933170
+R6
+R7
+L0 64
+R8
+r1
+!s85 0
+31
+Z23 !s108 1572933173.426000
+Z24 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3/CA3_Verilog.v|
+R11
+!s101 -O0
+R12
+Z25 n@e@q_@a@e_@comparator
+vfirst_eq_ae_comparator
+!i10b 1
+Z26 !s100 U70@D`h1UD`dT<J>Hjai01
+Z27 IihlmYTdi]1fS57C;;??h12
+Z28 VcAc;:JUT]aY4=V4eA531l0
+R4
+R22
+R6
+R7
+L0 43
+R8
+r1
+!s85 0
+31
+R23
+R24
+R11
+!s101 -O0
+R12
+vgt_cascadable_comparator
+!i10b 1
+Z29 !s100 86KNXYz[S6BM7cin^ZBZE2
+Z30 IK@R>oK0zc0UAP^^TYk38z1
+Z31 Vf0zl0S0TGk:K:7H5FmLI[0
+R4
+R22
+R6
+R7
+L0 16
+R8
+r1
+!s85 0
+31
+R23
+R24
+R11
+!s101 -O0
+R12
+vGT_Comparator
+!i10b 1
+Z32 !s100 ?T0GGHL`MfIfTd^ThGXN;0
+Z33 I81Gnz=W7JX8^4e]W=`bbW0
+Z34 V?iNhaF5_CI7U^ZOX8AIYm0
+R4
+R22
+R6
+R7
+L0 29
+R8
+r1
+!s85 0
+31
+R23
+R24
+R11
+!s101 -O0
+R12
+Z35 n@g@t_@comparator
+vother_eq_ae_comparator
+!i10b 1
+Z36 !s100 _;FMVROhO>Bf9gRA:PQzj3
+Z37 IHeBQ]1I4<4c>>@F;:LzoQ1
+Z38 Vd]DjhHmdXzaYOzbP>DH2n3
+R4
+R22
+R6
+R7
+L0 55
+R8
+r1
+!s85 0
+31
+R23
+R24
+R11
+!s101 -O0
+R12
+vtestTB
+!i10b 1
+!s100 jL40iORFz7N5R5n[5WXNm2
+I5nfonMZWgNRnT:LVhbnQ22
+Z39 Vj45]H_g<gC]3[1?fkT`JM2
+R4
+R22
+R6
+R7
+L0 79
+R8
+r1
+!s85 0
+31
+R23
+R24
+R11
+!s101 -O0
+R12
+Z40 ntest@t@b
+vtwoBitComparator
+!i10b 1
+Z41 !s100 2VQBG2TSFLQY1Eh@k;6K_1
+Z42 I^GD158Ckd8l`MD18TZNZ>1
+Z43 VdRfEE`UBNnFAoeVHN_LlS2
+R4
+R22
+R6
+R7
+L0 3
+R8
+r1
+!s85 0
+31
+R23
+R24
+R11
+!s101 -O0
+R12
+Z44 ntwo@bit@comparator

@@ -1,0 +1,1426 @@
+Analysis & Synthesis report for CA6_Quartus
+Sat Jan 04 00:48:16 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |CA6_Quartus|Controller:inst|ps
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0
+ 13. Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1
+ 14. Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2
+ 15. Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1
+ 16. Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_out:mac_out2
+ 17. Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1
+ 18. Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_out:mac_out2
+ 19. Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1
+ 20. Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_out:mac_out2
+ 21. lpm_mult Parameter Settings by Entity Instance
+ 22. Port Connectivity Checks: "DataPath:inst11|ROMi:ROM_iplus"
+ 23. Port Connectivity Checks: "DataPath:inst11|ROMi:ROM_i"
+ 24. Port Connectivity Checks: "DataPath:inst11|Register8:y_reg"
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
+ 27. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jan 04 00:48:16 2020           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; CA6_Quartus                                     ;
+; Top-level Entity Name              ; CA6_Quartus                                     ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; 395                                             ;
+;     Total combinational functions  ; 373                                             ;
+;     Dedicated logic registers      ; 60                                              ;
+; Total registers                    ; 60                                              ;
+; Total pins                         ; 46                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total GXB Receiver Channel PCS     ; 0                                               ;
+; Total GXB Receiver Channel PMA     ; 0                                               ;
+; Total GXB Transmitter Channel PCS  ; 0                                               ;
+; Total GXB Transmitter Channel PMA  ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CGX15BF14A7     ;                    ;
+; Top-level entity name                                                      ; CA6_Quartus        ; CA6_Quartus        ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                            ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; ROMi.v                           ; yes             ; User Verilog HDL File              ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ROMi.v               ;         ;
+; Register_init.v                  ; yes             ; User Verilog HDL File              ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register_init.v      ;         ;
+; Register8.v                      ; yes             ; User Verilog HDL File              ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register8.v          ;         ;
+; Register.v                       ; yes             ; User Verilog HDL File              ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register.v           ;         ;
+; Multiply.v                       ; yes             ; User Verilog HDL File              ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Multiply.v           ;         ;
+; DataPath.v                       ; yes             ; User Verilog HDL File              ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/DataPath.v           ;         ;
+; Controller.v                     ; yes             ; User Verilog HDL File              ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Controller.v         ;         ;
+; Adder.v                          ; yes             ; User Verilog HDL File              ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Adder.v              ;         ;
+; CA6_Quartus.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/CA6_Quartus.bdf      ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf                                                          ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                        ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                       ;         ;
+; multcore.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc                                                          ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                                          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                                                          ;         ;
+; db/mult_4ht.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mult_4ht.tdf      ;         ;
+; db/mult_6jt.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mult_6jt.tdf      ;         ;
+; db/mult_8jt.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mult_8jt.tdf      ;         ;
+; alt_mac_mult.tdf                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_mac_mult.tdf                                                      ;         ;
+; lpm_mult.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.inc                                                          ;         ;
+; db/mac_mult_f1h1.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mac_mult_f1h1.tdf ;         ;
+; db/mult_7tl.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mult_7tl.tdf      ;         ;
+; alt_mac_out.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_mac_out.tdf                                                       ;         ;
+; alt_zaccum.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_zaccum.inc                                                        ;         ;
+; db/mac_out_ov82.tdf              ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mac_out_ov82.tdf  ;         ;
+; db/mac_mult_d1h1.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mac_mult_d1h1.tdf ;         ;
+; db/mult_5tl.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mult_5tl.tdf      ;         ;
+; db/mac_out_mv82.tdf              ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mac_out_mv82.tdf  ;         ;
+; db/mac_mult_v2h1.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mac_mult_v2h1.tdf ;         ;
+; db/mult_nul.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mult_nul.tdf      ;         ;
+; db/mac_out_pv82.tdf              ; yes             ; Auto-Generated Megafunction        ; C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/db/mac_out_pv82.tdf  ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 46               ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; clk~input        ;
+; Maximum fan-out          ; 60               ;
+; Total fan-out            ; 1486             ;
+; Average fan-out          ; 2.83             ;
++--------------------------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                    ;
++--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                          ; Library Name ;
++--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |CA6_Quartus                                     ; 373 (0)           ; 60 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 46   ; 0            ; |CA6_Quartus                                                                                                                                                 ; work         ;
+;    |Controller:inst|                             ; 16 (16)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|Controller:inst                                                                                                                                 ; work         ;
+;    |DataPath:inst11|                             ; 357 (0)           ; 51 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11                                                                                                                                 ; work         ;
+;       |Multiply:cut_multiply|                    ; 292 (20)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply                                                                                                           ; work         ;
+;          |lpm_mult:Mult0|                        ; 183 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0                                                                                            ; work         ;
+;             |mult_4ht:auto_generated|            ; 183 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated                                                                    ; work         ;
+;                |alt_mac_mult:mac_mult1|          ; 183 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1                                             ; work         ;
+;                   |mac_mult_v2h1:auto_generated| ; 183 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated                ; work         ;
+;                      |mult_nul:mult1|            ; 183 (183)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1 ; work         ;
+;          |lpm_mult:Mult1|                        ; 39 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1                                                                                            ; work         ;
+;             |mult_6jt:auto_generated|            ; 39 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated                                                                    ; work         ;
+;                |alt_mac_mult:mac_mult1|          ; 39 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1                                             ; work         ;
+;                   |mac_mult_d1h1:auto_generated| ; 39 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated                ; work         ;
+;                      |mult_5tl:mult1|            ; 39 (39)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1 ; work         ;
+;          |lpm_mult:Mult2|                        ; 50 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2                                                                                            ; work         ;
+;             |mult_8jt:auto_generated|            ; 50 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated                                                                    ; work         ;
+;                |alt_mac_mult:mac_mult1|          ; 50 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1                                             ; work         ;
+;                   |mac_mult_f1h1:auto_generated| ; 50 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated                ; work         ;
+;                      |mult_7tl:mult1|            ; 50 (50)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1 ; work         ;
+;       |Register:x_reg|                           ; 0 (0)             ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Register:x_reg                                                                                                                  ; work         ;
+;       |Register_init:exp_reg|                    ; 18 (18)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Register_init:exp_reg                                                                                                           ; work         ;
+;       |Register_init:term_reg|                   ; 47 (47)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA6_Quartus|DataPath:inst11|Register_init:term_reg                                                                                                          ; work         ;
++--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |CA6_Quartus|Controller:inst|ps                                                   ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; Name    ; ps.0111 ; ps.0110 ; ps.0101 ; ps.0100 ; ps.0011 ; ps.0010 ; ps.0001 ; ps.0000 ; ps.1000 ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; ps.0000 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ;
+; ps.0001 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 1       ; 0       ;
+; ps.0010 ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 1       ; 0       ;
+; ps.0011 ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 1       ; 0       ;
+; ps.0100 ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 1       ; 0       ;
+; ps.0101 ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ;
+; ps.0110 ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ;
+; ps.0111 ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ;
+; ps.1000 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 1       ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; Controller:inst|ps~4                  ; Lost fanout        ;
+; Controller:inst|ps~5                  ; Lost fanout        ;
+; Controller:inst|ps~6                  ; Lost fanout        ;
+; Total Number of Removed Registers = 3 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 60    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 24    ;
+; Number of registers using Asynchronous Clear ; 60    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 50    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |CA6_Quartus|DataPath:inst11|Register_init:exp_reg|Q[0]   ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |CA6_Quartus|DataPath:inst11|Register_init:term_reg|Q[0]  ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 30 LEs               ; 10 LEs                 ; Yes        ; |CA6_Quartus|DataPath:inst11|Register_init:term_reg|Q[11] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+--------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                 ;
++------------------------------------------------+---------------+--------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                       ;
+; LPM_WIDTHA                                     ; 17            ; Untyped                              ;
+; LPM_WIDTHB                                     ; 17            ; Untyped                              ;
+; LPM_WIDTHP                                     ; 34            ; Untyped                              ;
+; LPM_WIDTHR                                     ; 34            ; Untyped                              ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                              ;
+; LPM_REPRESENTATION                             ; UNSIGNED      ; Untyped                              ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                              ;
+; LATENCY                                        ; 0             ; Untyped                              ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                              ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                              ;
+; USE_EAB                                        ; OFF           ; Untyped                              ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                              ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                              ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                              ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                  ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                              ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                              ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                              ;
+; CBXI_PARAMETER                                 ; mult_4ht      ; Untyped                              ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                              ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                              ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                              ;
++------------------------------------------------+---------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1 ;
++------------------------------------------------+---------------+--------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                 ;
++------------------------------------------------+---------------+--------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                       ;
+; LPM_WIDTHA                                     ; 7             ; Untyped                              ;
+; LPM_WIDTHB                                     ; 17            ; Untyped                              ;
+; LPM_WIDTHP                                     ; 24            ; Untyped                              ;
+; LPM_WIDTHR                                     ; 24            ; Untyped                              ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                              ;
+; LPM_REPRESENTATION                             ; UNSIGNED      ; Untyped                              ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                              ;
+; LATENCY                                        ; 0             ; Untyped                              ;
+; INPUT_A_IS_CONSTANT                            ; YES           ; Untyped                              ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                              ;
+; USE_EAB                                        ; OFF           ; Untyped                              ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                              ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                              ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                              ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                  ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                              ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                              ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                              ;
+; CBXI_PARAMETER                                 ; mult_6jt      ; Untyped                              ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                              ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                              ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                              ;
++------------------------------------------------+---------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2 ;
++------------------------------------------------+---------------+--------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                 ;
++------------------------------------------------+---------------+--------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                       ;
+; LPM_WIDTHA                                     ; 8             ; Untyped                              ;
+; LPM_WIDTHB                                     ; 17            ; Untyped                              ;
+; LPM_WIDTHP                                     ; 25            ; Untyped                              ;
+; LPM_WIDTHR                                     ; 25            ; Untyped                              ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                              ;
+; LPM_REPRESENTATION                             ; UNSIGNED      ; Untyped                              ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                              ;
+; LATENCY                                        ; 0             ; Untyped                              ;
+; INPUT_A_IS_CONSTANT                            ; YES           ; Untyped                              ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                              ;
+; USE_EAB                                        ; OFF           ; Untyped                              ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                              ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                              ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                              ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                  ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                              ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                              ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                              ;
+; CBXI_PARAMETER                                 ; mult_8jt      ; Untyped                              ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                              ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                              ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                              ;
++------------------------------------------------+---------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1 ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name               ; Value         ; Type                                                                                                  ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------+
+; LPM_WIDTHS                   ; 1             ; Untyped                                                                                               ;
+; DATAA_WIDTH                  ; 8             ; Untyped                                                                                               ;
+; DATAB_WIDTH                  ; 17            ; Untyped                                                                                               ;
+; DATAA_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; DATAB_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; SIGNA_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; SIGNB_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; OUTPUT_CLOCK                 ; NONE          ; Untyped                                                                                               ;
+; DATAA_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; DATAB_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; SIGNA_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; SIGNB_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; OUTPUT_CLEAR                 ; NONE          ; Untyped                                                                                               ;
+; ROUND_CLOCK                  ; none          ; Untyped                                                                                               ;
+; ROUND_CLEAR                  ; none          ; Untyped                                                                                               ;
+; SATURATE_CLOCK               ; none          ; Untyped                                                                                               ;
+; SATURATE_CLEAR               ; none          ; Untyped                                                                                               ;
+; BYPASS_MULTIPLIER            ; NO            ; Untyped                                                                                               ;
+; DYNAMIC_SCAN_CHAIN_SUPPORTED ; NO            ; Untyped                                                                                               ;
+; USING_ROUNDING               ; NO            ; Untyped                                                                                               ;
+; USING_SATURATION             ; NO            ; Untyped                                                                                               ;
+; EXTRA_OUTPUT_CLOCK           ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNA_CLOCK            ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNB_CLOCK            ; none          ; Untyped                                                                                               ;
+; EXTRA_OUTPUT_CLEAR           ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNA_CLEAR            ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNB_CLEAR            ; none          ; Untyped                                                                                               ;
+; MULT_PIPELINE                ; 0             ; Untyped                                                                                               ;
+; MULT_CLOCK                   ; NONE          ; Untyped                                                                                               ;
+; MULT_CLEAR                   ; NONE          ; Untyped                                                                                               ;
+; MULT_REPRESENTATION_A        ; UNSIGNED      ; Untyped                                                                                               ;
+; MULT_REPRESENTATION_B        ; UNSIGNED      ; Untyped                                                                                               ;
+; MULT_INPUT_A_IS_CONSTANT     ; NO            ; Untyped                                                                                               ;
+; MULT_INPUT_B_IS_CONSTANT     ; NO            ; Untyped                                                                                               ;
+; MULT_INPUT_A_FIXED_VALUE     ; Bx            ; Untyped                                                                                               ;
+; MULT_INPUT_B_FIXED_VALUE     ; Bx            ; Untyped                                                                                               ;
+; MULT_MAXIMIZE_SPEED          ; 5             ; Untyped                                                                                               ;
+; CBXI_PARAMETER               ; mac_mult_f1h1 ; Untyped                                                                                               ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_out:mac_out2 ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name                ; Value        ; Type                                                                                                ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+; OPERATION_MODE                ; OUTPUT_ONLY  ; Untyped                                                                                             ;
+; DATAA_WIDTH                   ; 25           ; Untyped                                                                                             ;
+; DATAB_WIDTH                   ; 0            ; Untyped                                                                                             ;
+; DATAC_WIDTH                   ; 0            ; Untyped                                                                                             ;
+; DATAD_WIDTH                   ; 0            ; Untyped                                                                                             ;
+; ADDNSUB0_CLOCK                ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_CLOCK                ; NONE         ; Untyped                                                                                             ;
+; ROUND0_CLOCK                  ; none         ; Untyped                                                                                             ;
+; ROUND1_CLOCK                  ; none         ; Untyped                                                                                             ;
+; SATURATE_CLOCK                ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_CLOCK          ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_CLOCK          ; none         ; Untyped                                                                                             ;
+; ZEROACC_CLOCK                 ; NONE         ; Untyped                                                                                             ;
+; SIGNA_CLOCK                   ; NONE         ; Untyped                                                                                             ;
+; SIGNB_CLOCK                   ; NONE         ; Untyped                                                                                             ;
+; OUTPUT_CLOCK                  ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB0_CLEAR                ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_CLEAR                ; NONE         ; Untyped                                                                                             ;
+; ROUND0_CLEAR                  ; none         ; Untyped                                                                                             ;
+; ROUND1_CLEAR                  ; none         ; Untyped                                                                                             ;
+; SATURATE_CLEAR                ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_CLEAR          ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_CLEAR          ; none         ; Untyped                                                                                             ;
+; ZEROACC_CLEAR                 ; NONE         ; Untyped                                                                                             ;
+; SIGNA_CLEAR                   ; NONE         ; Untyped                                                                                             ;
+; SIGNB_CLEAR                   ; NONE         ; Untyped                                                                                             ;
+; OUTPUT_CLEAR                  ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB0_PIPELINE_CLOCK       ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_PIPELINE_CLOCK       ; NONE         ; Untyped                                                                                             ;
+; ROUND0_PIPELINE_CLOCK         ; none         ; Untyped                                                                                             ;
+; ROUND1_PIPELINE_CLOCK         ; none         ; Untyped                                                                                             ;
+; SATURATE_PIPELINE_CLOCK       ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_PIPELINE_CLOCK ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_PIPELINE_CLOCK ; none         ; Untyped                                                                                             ;
+; ZEROACC_PIPELINE_CLOCK        ; NONE         ; Untyped                                                                                             ;
+; SIGNA_PIPELINE_CLOCK          ; NONE         ; Untyped                                                                                             ;
+; SIGNB_PIPELINE_CLOCK          ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB0_PIPELINE_CLEAR       ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_PIPELINE_CLEAR       ; NONE         ; Untyped                                                                                             ;
+; ROUND0_PIPELINE_CLEAR         ; none         ; Untyped                                                                                             ;
+; ROUND1_PIPELINE_CLEAR         ; none         ; Untyped                                                                                             ;
+; SATURATE_PIPELINE_CLEAR       ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_PIPELINE_CLEAR ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_PIPELINE_CLEAR ; none         ; Untyped                                                                                             ;
+; ZEROACC_PIPELINE_CLEAR        ; NONE         ; Untyped                                                                                             ;
+; SIGNA_PIPELINE_CLEAR          ; NONE         ; Untyped                                                                                             ;
+; SIGNB_PIPELINE_CLEAR          ; NONE         ; Untyped                                                                                             ;
+; MODE0_CLOCK                   ; none         ; Untyped                                                                                             ;
+; MODE1_CLOCK                   ; none         ; Untyped                                                                                             ;
+; ZEROACC1_CLOCK                ; none         ; Untyped                                                                                             ;
+; SATURATE1_CLOCK               ; none         ; Untyped                                                                                             ;
+; OUTPUT1_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT2_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT3_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT4_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT5_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT6_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT7_CLOCK                 ; none         ; Untyped                                                                                             ;
+; MODE0_CLEAR                   ; none         ; Untyped                                                                                             ;
+; MODE1_CLEAR                   ; none         ; Untyped                                                                                             ;
+; ZEROACC1_CLEAR                ; none         ; Untyped                                                                                             ;
+; SATURATE1_CLEAR               ; none         ; Untyped                                                                                             ;
+; OUTPUT1_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT2_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT3_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT4_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT5_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT6_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT7_CLEAR                 ; none         ; Untyped                                                                                             ;
+; MODE0_PIPELINE_CLOCK          ; none         ; Untyped                                                                                             ;
+; MODE1_PIPELINE_CLOCK          ; none         ; Untyped                                                                                             ;
+; ZEROACC1_PIPELINE_CLOCK       ; none         ; Untyped                                                                                             ;
+; SATURATE1_PIPELINE_CLOCK      ; none         ; Untyped                                                                                             ;
+; MODE0_PIPELINE_CLEAR          ; none         ; Untyped                                                                                             ;
+; MODE1_PIPELINE_CLEAR          ; none         ; Untyped                                                                                             ;
+; ZEROACC1_PIPELINE_CLEAR       ; none         ; Untyped                                                                                             ;
+; SATURATE1_PIPELINE_CLEAR      ; none         ; Untyped                                                                                             ;
+; FIRST_ADDER0_CLOCK            ; NONE         ; Untyped                                                                                             ;
+; FIRST_ADDER1_CLOCK            ; NONE         ; Untyped                                                                                             ;
+; FIRST_ADDER0_CLEAR            ; NONE         ; Untyped                                                                                             ;
+; FIRST_ADDER1_CLEAR            ; NONE         ; Untyped                                                                                             ;
+; DATAA_FORCED_TO_ZERO          ; NO           ; Untyped                                                                                             ;
+; DATAC_FORCED_TO_ZERO          ; NO           ; Untyped                                                                                             ;
+; USING_ROUNDING                ; NO           ; Untyped                                                                                             ;
+; USING_SATURATION              ; NO           ; Untyped                                                                                             ;
+; USING_MULT_SATURATION         ; NO           ; Untyped                                                                                             ;
+; USING_LOADABLE_ACCUM          ; NO           ; Untyped                                                                                             ;
+; LOADABLE_ACCUM_SUPPORTED      ; NO           ; Untyped                                                                                             ;
+; USING_CHAINOUT                ; NO           ; Untyped                                                                                             ;
+; CHAININ_WIDTH                 ; 0            ; Untyped                                                                                             ;
+; CHAINOUT_PIPELINE_CLOCK       ; none         ; Untyped                                                                                             ;
+; CHAINOUT_PIPELINE_CLEAR       ; none         ; Untyped                                                                                             ;
+; CBXI_PARAMETER                ; mac_out_ov82 ; Untyped                                                                                             ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1 ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name               ; Value         ; Type                                                                                                  ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------+
+; LPM_WIDTHS                   ; 1             ; Untyped                                                                                               ;
+; DATAA_WIDTH                  ; 7             ; Untyped                                                                                               ;
+; DATAB_WIDTH                  ; 17            ; Untyped                                                                                               ;
+; DATAA_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; DATAB_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; SIGNA_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; SIGNB_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; OUTPUT_CLOCK                 ; NONE          ; Untyped                                                                                               ;
+; DATAA_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; DATAB_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; SIGNA_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; SIGNB_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; OUTPUT_CLEAR                 ; NONE          ; Untyped                                                                                               ;
+; ROUND_CLOCK                  ; none          ; Untyped                                                                                               ;
+; ROUND_CLEAR                  ; none          ; Untyped                                                                                               ;
+; SATURATE_CLOCK               ; none          ; Untyped                                                                                               ;
+; SATURATE_CLEAR               ; none          ; Untyped                                                                                               ;
+; BYPASS_MULTIPLIER            ; NO            ; Untyped                                                                                               ;
+; DYNAMIC_SCAN_CHAIN_SUPPORTED ; NO            ; Untyped                                                                                               ;
+; USING_ROUNDING               ; NO            ; Untyped                                                                                               ;
+; USING_SATURATION             ; NO            ; Untyped                                                                                               ;
+; EXTRA_OUTPUT_CLOCK           ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNA_CLOCK            ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNB_CLOCK            ; none          ; Untyped                                                                                               ;
+; EXTRA_OUTPUT_CLEAR           ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNA_CLEAR            ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNB_CLEAR            ; none          ; Untyped                                                                                               ;
+; MULT_PIPELINE                ; 0             ; Untyped                                                                                               ;
+; MULT_CLOCK                   ; NONE          ; Untyped                                                                                               ;
+; MULT_CLEAR                   ; NONE          ; Untyped                                                                                               ;
+; MULT_REPRESENTATION_A        ; UNSIGNED      ; Untyped                                                                                               ;
+; MULT_REPRESENTATION_B        ; UNSIGNED      ; Untyped                                                                                               ;
+; MULT_INPUT_A_IS_CONSTANT     ; NO            ; Untyped                                                                                               ;
+; MULT_INPUT_B_IS_CONSTANT     ; NO            ; Untyped                                                                                               ;
+; MULT_INPUT_A_FIXED_VALUE     ; Bx            ; Untyped                                                                                               ;
+; MULT_INPUT_B_FIXED_VALUE     ; Bx            ; Untyped                                                                                               ;
+; MULT_MAXIMIZE_SPEED          ; 5             ; Untyped                                                                                               ;
+; CBXI_PARAMETER               ; mac_mult_d1h1 ; Untyped                                                                                               ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_out:mac_out2 ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name                ; Value        ; Type                                                                                                ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+; OPERATION_MODE                ; OUTPUT_ONLY  ; Untyped                                                                                             ;
+; DATAA_WIDTH                   ; 24           ; Untyped                                                                                             ;
+; DATAB_WIDTH                   ; 0            ; Untyped                                                                                             ;
+; DATAC_WIDTH                   ; 0            ; Untyped                                                                                             ;
+; DATAD_WIDTH                   ; 0            ; Untyped                                                                                             ;
+; ADDNSUB0_CLOCK                ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_CLOCK                ; NONE         ; Untyped                                                                                             ;
+; ROUND0_CLOCK                  ; none         ; Untyped                                                                                             ;
+; ROUND1_CLOCK                  ; none         ; Untyped                                                                                             ;
+; SATURATE_CLOCK                ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_CLOCK          ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_CLOCK          ; none         ; Untyped                                                                                             ;
+; ZEROACC_CLOCK                 ; NONE         ; Untyped                                                                                             ;
+; SIGNA_CLOCK                   ; NONE         ; Untyped                                                                                             ;
+; SIGNB_CLOCK                   ; NONE         ; Untyped                                                                                             ;
+; OUTPUT_CLOCK                  ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB0_CLEAR                ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_CLEAR                ; NONE         ; Untyped                                                                                             ;
+; ROUND0_CLEAR                  ; none         ; Untyped                                                                                             ;
+; ROUND1_CLEAR                  ; none         ; Untyped                                                                                             ;
+; SATURATE_CLEAR                ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_CLEAR          ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_CLEAR          ; none         ; Untyped                                                                                             ;
+; ZEROACC_CLEAR                 ; NONE         ; Untyped                                                                                             ;
+; SIGNA_CLEAR                   ; NONE         ; Untyped                                                                                             ;
+; SIGNB_CLEAR                   ; NONE         ; Untyped                                                                                             ;
+; OUTPUT_CLEAR                  ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB0_PIPELINE_CLOCK       ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_PIPELINE_CLOCK       ; NONE         ; Untyped                                                                                             ;
+; ROUND0_PIPELINE_CLOCK         ; none         ; Untyped                                                                                             ;
+; ROUND1_PIPELINE_CLOCK         ; none         ; Untyped                                                                                             ;
+; SATURATE_PIPELINE_CLOCK       ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_PIPELINE_CLOCK ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_PIPELINE_CLOCK ; none         ; Untyped                                                                                             ;
+; ZEROACC_PIPELINE_CLOCK        ; NONE         ; Untyped                                                                                             ;
+; SIGNA_PIPELINE_CLOCK          ; NONE         ; Untyped                                                                                             ;
+; SIGNB_PIPELINE_CLOCK          ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB0_PIPELINE_CLEAR       ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_PIPELINE_CLEAR       ; NONE         ; Untyped                                                                                             ;
+; ROUND0_PIPELINE_CLEAR         ; none         ; Untyped                                                                                             ;
+; ROUND1_PIPELINE_CLEAR         ; none         ; Untyped                                                                                             ;
+; SATURATE_PIPELINE_CLEAR       ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_PIPELINE_CLEAR ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_PIPELINE_CLEAR ; none         ; Untyped                                                                                             ;
+; ZEROACC_PIPELINE_CLEAR        ; NONE         ; Untyped                                                                                             ;
+; SIGNA_PIPELINE_CLEAR          ; NONE         ; Untyped                                                                                             ;
+; SIGNB_PIPELINE_CLEAR          ; NONE         ; Untyped                                                                                             ;
+; MODE0_CLOCK                   ; none         ; Untyped                                                                                             ;
+; MODE1_CLOCK                   ; none         ; Untyped                                                                                             ;
+; ZEROACC1_CLOCK                ; none         ; Untyped                                                                                             ;
+; SATURATE1_CLOCK               ; none         ; Untyped                                                                                             ;
+; OUTPUT1_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT2_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT3_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT4_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT5_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT6_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT7_CLOCK                 ; none         ; Untyped                                                                                             ;
+; MODE0_CLEAR                   ; none         ; Untyped                                                                                             ;
+; MODE1_CLEAR                   ; none         ; Untyped                                                                                             ;
+; ZEROACC1_CLEAR                ; none         ; Untyped                                                                                             ;
+; SATURATE1_CLEAR               ; none         ; Untyped                                                                                             ;
+; OUTPUT1_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT2_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT3_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT4_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT5_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT6_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT7_CLEAR                 ; none         ; Untyped                                                                                             ;
+; MODE0_PIPELINE_CLOCK          ; none         ; Untyped                                                                                             ;
+; MODE1_PIPELINE_CLOCK          ; none         ; Untyped                                                                                             ;
+; ZEROACC1_PIPELINE_CLOCK       ; none         ; Untyped                                                                                             ;
+; SATURATE1_PIPELINE_CLOCK      ; none         ; Untyped                                                                                             ;
+; MODE0_PIPELINE_CLEAR          ; none         ; Untyped                                                                                             ;
+; MODE1_PIPELINE_CLEAR          ; none         ; Untyped                                                                                             ;
+; ZEROACC1_PIPELINE_CLEAR       ; none         ; Untyped                                                                                             ;
+; SATURATE1_PIPELINE_CLEAR      ; none         ; Untyped                                                                                             ;
+; FIRST_ADDER0_CLOCK            ; NONE         ; Untyped                                                                                             ;
+; FIRST_ADDER1_CLOCK            ; NONE         ; Untyped                                                                                             ;
+; FIRST_ADDER0_CLEAR            ; NONE         ; Untyped                                                                                             ;
+; FIRST_ADDER1_CLEAR            ; NONE         ; Untyped                                                                                             ;
+; DATAA_FORCED_TO_ZERO          ; NO           ; Untyped                                                                                             ;
+; DATAC_FORCED_TO_ZERO          ; NO           ; Untyped                                                                                             ;
+; USING_ROUNDING                ; NO           ; Untyped                                                                                             ;
+; USING_SATURATION              ; NO           ; Untyped                                                                                             ;
+; USING_MULT_SATURATION         ; NO           ; Untyped                                                                                             ;
+; USING_LOADABLE_ACCUM          ; NO           ; Untyped                                                                                             ;
+; LOADABLE_ACCUM_SUPPORTED      ; NO           ; Untyped                                                                                             ;
+; USING_CHAINOUT                ; NO           ; Untyped                                                                                             ;
+; CHAININ_WIDTH                 ; 0            ; Untyped                                                                                             ;
+; CHAINOUT_PIPELINE_CLOCK       ; none         ; Untyped                                                                                             ;
+; CHAINOUT_PIPELINE_CLEAR       ; none         ; Untyped                                                                                             ;
+; CBXI_PARAMETER                ; mac_out_mv82 ; Untyped                                                                                             ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1 ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name               ; Value         ; Type                                                                                                  ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------+
+; LPM_WIDTHS                   ; 1             ; Untyped                                                                                               ;
+; DATAA_WIDTH                  ; 17            ; Untyped                                                                                               ;
+; DATAB_WIDTH                  ; 17            ; Untyped                                                                                               ;
+; DATAA_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; DATAB_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; SIGNA_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; SIGNB_CLOCK                  ; NONE          ; Untyped                                                                                               ;
+; OUTPUT_CLOCK                 ; NONE          ; Untyped                                                                                               ;
+; DATAA_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; DATAB_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; SIGNA_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; SIGNB_CLEAR                  ; NONE          ; Untyped                                                                                               ;
+; OUTPUT_CLEAR                 ; NONE          ; Untyped                                                                                               ;
+; ROUND_CLOCK                  ; none          ; Untyped                                                                                               ;
+; ROUND_CLEAR                  ; none          ; Untyped                                                                                               ;
+; SATURATE_CLOCK               ; none          ; Untyped                                                                                               ;
+; SATURATE_CLEAR               ; none          ; Untyped                                                                                               ;
+; BYPASS_MULTIPLIER            ; NO            ; Untyped                                                                                               ;
+; DYNAMIC_SCAN_CHAIN_SUPPORTED ; NO            ; Untyped                                                                                               ;
+; USING_ROUNDING               ; NO            ; Untyped                                                                                               ;
+; USING_SATURATION             ; NO            ; Untyped                                                                                               ;
+; EXTRA_OUTPUT_CLOCK           ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNA_CLOCK            ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNB_CLOCK            ; none          ; Untyped                                                                                               ;
+; EXTRA_OUTPUT_CLEAR           ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNA_CLEAR            ; none          ; Untyped                                                                                               ;
+; EXTRA_SIGNB_CLEAR            ; none          ; Untyped                                                                                               ;
+; MULT_PIPELINE                ; 0             ; Untyped                                                                                               ;
+; MULT_CLOCK                   ; NONE          ; Untyped                                                                                               ;
+; MULT_CLEAR                   ; NONE          ; Untyped                                                                                               ;
+; MULT_REPRESENTATION_A        ; UNSIGNED      ; Untyped                                                                                               ;
+; MULT_REPRESENTATION_B        ; UNSIGNED      ; Untyped                                                                                               ;
+; MULT_INPUT_A_IS_CONSTANT     ; NO            ; Untyped                                                                                               ;
+; MULT_INPUT_B_IS_CONSTANT     ; NO            ; Untyped                                                                                               ;
+; MULT_INPUT_A_FIXED_VALUE     ; Bx            ; Untyped                                                                                               ;
+; MULT_INPUT_B_FIXED_VALUE     ; Bx            ; Untyped                                                                                               ;
+; MULT_MAXIMIZE_SPEED          ; 5             ; Untyped                                                                                               ;
+; CBXI_PARAMETER               ; mac_mult_v2h1 ; Untyped                                                                                               ;
++------------------------------+---------------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_out:mac_out2 ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name                ; Value        ; Type                                                                                                ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+; OPERATION_MODE                ; OUTPUT_ONLY  ; Untyped                                                                                             ;
+; DATAA_WIDTH                   ; 34           ; Untyped                                                                                             ;
+; DATAB_WIDTH                   ; 0            ; Untyped                                                                                             ;
+; DATAC_WIDTH                   ; 0            ; Untyped                                                                                             ;
+; DATAD_WIDTH                   ; 0            ; Untyped                                                                                             ;
+; ADDNSUB0_CLOCK                ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_CLOCK                ; NONE         ; Untyped                                                                                             ;
+; ROUND0_CLOCK                  ; none         ; Untyped                                                                                             ;
+; ROUND1_CLOCK                  ; none         ; Untyped                                                                                             ;
+; SATURATE_CLOCK                ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_CLOCK          ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_CLOCK          ; none         ; Untyped                                                                                             ;
+; ZEROACC_CLOCK                 ; NONE         ; Untyped                                                                                             ;
+; SIGNA_CLOCK                   ; NONE         ; Untyped                                                                                             ;
+; SIGNB_CLOCK                   ; NONE         ; Untyped                                                                                             ;
+; OUTPUT_CLOCK                  ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB0_CLEAR                ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_CLEAR                ; NONE         ; Untyped                                                                                             ;
+; ROUND0_CLEAR                  ; none         ; Untyped                                                                                             ;
+; ROUND1_CLEAR                  ; none         ; Untyped                                                                                             ;
+; SATURATE_CLEAR                ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_CLEAR          ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_CLEAR          ; none         ; Untyped                                                                                             ;
+; ZEROACC_CLEAR                 ; NONE         ; Untyped                                                                                             ;
+; SIGNA_CLEAR                   ; NONE         ; Untyped                                                                                             ;
+; SIGNB_CLEAR                   ; NONE         ; Untyped                                                                                             ;
+; OUTPUT_CLEAR                  ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB0_PIPELINE_CLOCK       ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_PIPELINE_CLOCK       ; NONE         ; Untyped                                                                                             ;
+; ROUND0_PIPELINE_CLOCK         ; none         ; Untyped                                                                                             ;
+; ROUND1_PIPELINE_CLOCK         ; none         ; Untyped                                                                                             ;
+; SATURATE_PIPELINE_CLOCK       ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_PIPELINE_CLOCK ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_PIPELINE_CLOCK ; none         ; Untyped                                                                                             ;
+; ZEROACC_PIPELINE_CLOCK        ; NONE         ; Untyped                                                                                             ;
+; SIGNA_PIPELINE_CLOCK          ; NONE         ; Untyped                                                                                             ;
+; SIGNB_PIPELINE_CLOCK          ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB0_PIPELINE_CLEAR       ; NONE         ; Untyped                                                                                             ;
+; ADDNSUB1_PIPELINE_CLEAR       ; NONE         ; Untyped                                                                                             ;
+; ROUND0_PIPELINE_CLEAR         ; none         ; Untyped                                                                                             ;
+; ROUND1_PIPELINE_CLEAR         ; none         ; Untyped                                                                                             ;
+; SATURATE_PIPELINE_CLEAR       ; none         ; Untyped                                                                                             ;
+; MULTABSATURATE_PIPELINE_CLEAR ; none         ; Untyped                                                                                             ;
+; MULTCDSATURATE_PIPELINE_CLEAR ; none         ; Untyped                                                                                             ;
+; ZEROACC_PIPELINE_CLEAR        ; NONE         ; Untyped                                                                                             ;
+; SIGNA_PIPELINE_CLEAR          ; NONE         ; Untyped                                                                                             ;
+; SIGNB_PIPELINE_CLEAR          ; NONE         ; Untyped                                                                                             ;
+; MODE0_CLOCK                   ; none         ; Untyped                                                                                             ;
+; MODE1_CLOCK                   ; none         ; Untyped                                                                                             ;
+; ZEROACC1_CLOCK                ; none         ; Untyped                                                                                             ;
+; SATURATE1_CLOCK               ; none         ; Untyped                                                                                             ;
+; OUTPUT1_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT2_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT3_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT4_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT5_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT6_CLOCK                 ; none         ; Untyped                                                                                             ;
+; OUTPUT7_CLOCK                 ; none         ; Untyped                                                                                             ;
+; MODE0_CLEAR                   ; none         ; Untyped                                                                                             ;
+; MODE1_CLEAR                   ; none         ; Untyped                                                                                             ;
+; ZEROACC1_CLEAR                ; none         ; Untyped                                                                                             ;
+; SATURATE1_CLEAR               ; none         ; Untyped                                                                                             ;
+; OUTPUT1_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT2_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT3_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT4_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT5_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT6_CLEAR                 ; none         ; Untyped                                                                                             ;
+; OUTPUT7_CLEAR                 ; none         ; Untyped                                                                                             ;
+; MODE0_PIPELINE_CLOCK          ; none         ; Untyped                                                                                             ;
+; MODE1_PIPELINE_CLOCK          ; none         ; Untyped                                                                                             ;
+; ZEROACC1_PIPELINE_CLOCK       ; none         ; Untyped                                                                                             ;
+; SATURATE1_PIPELINE_CLOCK      ; none         ; Untyped                                                                                             ;
+; MODE0_PIPELINE_CLEAR          ; none         ; Untyped                                                                                             ;
+; MODE1_PIPELINE_CLEAR          ; none         ; Untyped                                                                                             ;
+; ZEROACC1_PIPELINE_CLEAR       ; none         ; Untyped                                                                                             ;
+; SATURATE1_PIPELINE_CLEAR      ; none         ; Untyped                                                                                             ;
+; FIRST_ADDER0_CLOCK            ; NONE         ; Untyped                                                                                             ;
+; FIRST_ADDER1_CLOCK            ; NONE         ; Untyped                                                                                             ;
+; FIRST_ADDER0_CLEAR            ; NONE         ; Untyped                                                                                             ;
+; FIRST_ADDER1_CLEAR            ; NONE         ; Untyped                                                                                             ;
+; DATAA_FORCED_TO_ZERO          ; NO           ; Untyped                                                                                             ;
+; DATAC_FORCED_TO_ZERO          ; NO           ; Untyped                                                                                             ;
+; USING_ROUNDING                ; NO           ; Untyped                                                                                             ;
+; USING_SATURATION              ; NO           ; Untyped                                                                                             ;
+; USING_MULT_SATURATION         ; NO           ; Untyped                                                                                             ;
+; USING_LOADABLE_ACCUM          ; NO           ; Untyped                                                                                             ;
+; LOADABLE_ACCUM_SUPPORTED      ; NO           ; Untyped                                                                                             ;
+; USING_CHAINOUT                ; NO           ; Untyped                                                                                             ;
+; CHAININ_WIDTH                 ; 0            ; Untyped                                                                                             ;
+; CHAINOUT_PIPELINE_CLOCK       ; none         ; Untyped                                                                                             ;
+; CHAINOUT_PIPELINE_CLEAR       ; none         ; Untyped                                                                                             ;
+; CBXI_PARAMETER                ; mac_out_pv82 ; Untyped                                                                                             ;
++-------------------------------+--------------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                               ;
++---------------------------------------+------------------------------------------------------+
+; Name                                  ; Value                                                ;
++---------------------------------------+------------------------------------------------------+
+; Number of entity instances            ; 3                                                    ;
+; Entity Instance                       ; DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 17                                                   ;
+;     -- LPM_WIDTHB                     ; 17                                                   ;
+;     -- LPM_WIDTHP                     ; 34                                                   ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                             ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                   ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                   ;
+;     -- USE_EAB                        ; OFF                                                  ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                 ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                   ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                   ;
+; Entity Instance                       ; DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1 ;
+;     -- LPM_WIDTHA                     ; 7                                                    ;
+;     -- LPM_WIDTHB                     ; 17                                                   ;
+;     -- LPM_WIDTHP                     ; 24                                                   ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                             ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                                  ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                   ;
+;     -- USE_EAB                        ; OFF                                                  ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                 ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                   ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                   ;
+; Entity Instance                       ; DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2 ;
+;     -- LPM_WIDTHA                     ; 8                                                    ;
+;     -- LPM_WIDTHB                     ; 17                                                   ;
+;     -- LPM_WIDTHP                     ; 25                                                   ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                             ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                                  ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                   ;
+;     -- USE_EAB                        ; OFF                                                  ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                 ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                   ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                   ;
++---------------------------------------+------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DataPath:inst11|ROMi:ROM_iplus"                                                                                                                                                    ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                          ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pointer ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (1 bits) it drives.  The 3 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DataPath:inst11|ROMi:ROM_i"                                                                                                                                                        ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                          ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pointer ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (1 bits) it drives.  The 3 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DataPath:inst11|Register8:y_reg"                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Jan 04 00:48:12 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CA6_Quartus -c CA6_Quartus
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file romi.v
+    Info (12023): Found entity 1: ROMi
+Info (12021): Found 1 design units, including 1 entities, in source file register_init.v
+    Info (12023): Found entity 1: Register_init
+Info (12021): Found 1 design units, including 1 entities, in source file register8.v
+    Info (12023): Found entity 1: Register8
+Info (12021): Found 1 design units, including 1 entities, in source file register.v
+    Info (12023): Found entity 1: Register
+Info (12021): Found 1 design units, including 1 entities, in source file multiply.v
+    Info (12023): Found entity 1: Multiply
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
+    Info (12023): Found entity 1: DataPath
+Info (12021): Found 1 design units, including 1 entities, in source file controller.v
+    Info (12023): Found entity 1: Controller
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: Adder
+Info (12021): Found 1 design units, including 1 entities, in source file ca6_quartus.bdf
+    Info (12023): Found entity 1: CA6_Quartus
+Info (12127): Elaborating entity "CA6_Quartus" for the top level hierarchy
+Info (12128): Elaborating entity "Controller" for hierarchy "Controller:inst"
+Warning (10230): Verilog HDL assignment warning at Controller.v(67): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at Controller.v(68): truncated value with size 32 to match size of target (4)
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(69): variable "exp" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at Controller.v(69): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Info (12128): Elaborating entity "DataPath" for hierarchy "DataPath:inst11"
+Info (12128): Elaborating entity "Register" for hierarchy "DataPath:inst11|Register:x_reg"
+Info (12128): Elaborating entity "Register8" for hierarchy "DataPath:inst11|Register8:y_reg"
+Info (12128): Elaborating entity "ROMi" for hierarchy "DataPath:inst11|ROMi:ROM_i"
+Warning (10230): Verilog HDL assignment warning at ROMi.v(5): truncated value with size 32 to match size of target (8)
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(6): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(7): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(8): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(9): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(10): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(11): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(12): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(13): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(14): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(15): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(16): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(17): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(18): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(19): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at ROMi.v(20): case item expression never matches the case expression
+Warning (10230): Verilog HDL assignment warning at ROMi.v(21): truncated value with size 32 to match size of target (8)
+Info (12128): Elaborating entity "Register_init" for hierarchy "DataPath:inst11|Register_init:term_reg"
+Info (12128): Elaborating entity "Multiply" for hierarchy "DataPath:inst11|Multiply:cut_multiply"
+Warning (10230): Verilog HDL assignment warning at Multiply.v(3): truncated value with size 32 to match size of target (17)
+Info (12128): Elaborating entity "Adder" for hierarchy "DataPath:inst11|Adder:cut_adder"
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "DataPath:inst11|Multiply:cut_multiply|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "DataPath:inst11|Multiply:cut_multiply|Mult1"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "DataPath:inst11|Multiply:cut_multiply|Mult2"
+Info (12130): Elaborated megafunction instantiation "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "17"
+    Info (12134): Parameter "LPM_WIDTHP" = "34"
+    Info (12134): Parameter "LPM_WIDTHR" = "34"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_4ht.tdf
+    Info (12023): Found entity 1: mult_4ht
+Info (12130): Elaborated megafunction instantiation "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1"
+Info (12133): Instantiated megafunction "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "7"
+    Info (12134): Parameter "LPM_WIDTHB" = "17"
+    Info (12134): Parameter "LPM_WIDTHP" = "24"
+    Info (12134): Parameter "LPM_WIDTHR" = "24"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_6jt.tdf
+    Info (12023): Found entity 1: mult_6jt
+Info (12130): Elaborated megafunction instantiation "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2"
+Info (12133): Instantiated megafunction "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "8"
+    Info (12134): Parameter "LPM_WIDTHB" = "17"
+    Info (12134): Parameter "LPM_WIDTHP" = "25"
+    Info (12134): Parameter "LPM_WIDTHR" = "25"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_8jt.tdf
+    Info (12023): Found entity 1: mult_8jt
+Info (270001): Converted 3 DSP block slices
+    Info (270002): Used 3 DSP blocks before DSP block balancing
+        Info (270003): Used 3 DSP block slices in "Simple Multiplier (18-bit)" mode implemented in approximately 3 DSP blocks
+    Info (270013): Converted the following 3 DSP block slices to logic elements
+        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|mac_out2"
+            Info (270004): DSP block output node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|mac_out2"
+            Info (270005): DSP block multiplier node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|mac_mult1"
+        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|mac_out2"
+            Info (270004): DSP block output node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|mac_out2"
+            Info (270005): DSP block multiplier node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|mac_mult1"
+        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|mac_out2"
+            Info (270004): DSP block output node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|mac_out2"
+            Info (270005): DSP block multiplier node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|mac_mult1"
+    Info (270002): Used 0 DSP blocks after DSP block balancing
+Info (12130): Elaborated megafunction instantiation "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1"
+Info (12133): Instantiated megafunction "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1" with the following parameter:
+    Info (12134): Parameter "MULT_REPRESENTATION_A" = "UNSIGNED"
+    Info (12134): Parameter "MULT_REPRESENTATION_B" = "UNSIGNED"
+    Info (12134): Parameter "MULT_PIPELINE" = "0"
+    Info (12134): Parameter "MULT_CLOCK" = "NONE"
+    Info (12134): Parameter "MULT_CLEAR" = "NONE"
+    Info (12134): Parameter "MULT_INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MULT_INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "dataa_width" = "8"
+    Info (12134): Parameter "datab_width" = "17"
+    Info (12134): Parameter "output_width" = "25"
+    Info (12134): Parameter "dataa_clock" = "NONE"
+    Info (12134): Parameter "datab_clock" = "NONE"
+    Info (12134): Parameter "signa_clock" = "NONE"
+    Info (12134): Parameter "signb_clock" = "NONE"
+    Info (12134): Parameter "output_clock" = "NONE"
+    Info (12134): Parameter "dataa_clear" = "NONE"
+    Info (12134): Parameter "datab_clear" = "NONE"
+    Info (12134): Parameter "signa_clear" = "NONE"
+    Info (12134): Parameter "signb_clear" = "NONE"
+    Info (12134): Parameter "output_clear" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mac_mult_f1h1.tdf
+    Info (12023): Found entity 1: mac_mult_f1h1
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_7tl.tdf
+    Info (12023): Found entity 1: mult_7tl
+Info (12130): Elaborated megafunction instantiation "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_out:mac_out2"
+Info (12133): Instantiated megafunction "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_out:mac_out2" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "OUTPUT_ONLY"
+    Info (12134): Parameter "dataa_width" = "25"
+    Info (12134): Parameter "datab_width" = "0"
+    Info (12134): Parameter "datac_width" = "0"
+    Info (12134): Parameter "datad_width" = "0"
+    Info (12134): Parameter "output_width" = "25"
+    Info (12134): Parameter "signa_clock" = "NONE"
+    Info (12134): Parameter "signb_clock" = "NONE"
+    Info (12134): Parameter "addnsub0_clock" = "NONE"
+    Info (12134): Parameter "addnsub1_clock" = "NONE"
+    Info (12134): Parameter "zeroacc_clock" = "NONE"
+    Info (12134): Parameter "first_adder0_clock" = "NONE"
+    Info (12134): Parameter "first_adder1_clock" = "NONE"
+    Info (12134): Parameter "output_clock" = "NONE"
+    Info (12134): Parameter "signa_clear" = "NONE"
+    Info (12134): Parameter "signb_clear" = "NONE"
+    Info (12134): Parameter "addnsub0_clear" = "NONE"
+    Info (12134): Parameter "addnsub1_clear" = "NONE"
+    Info (12134): Parameter "zeroacc_clear" = "NONE"
+    Info (12134): Parameter "first_adder0_clear" = "NONE"
+    Info (12134): Parameter "first_adder1_clear" = "NONE"
+    Info (12134): Parameter "output_clear" = "NONE"
+    Info (12134): Parameter "signa_pipeline_clock" = "NONE"
+    Info (12134): Parameter "signb_pipeline_clock" = "NONE"
+    Info (12134): Parameter "addnsub0_pipeline_clock" = "NONE"
+    Info (12134): Parameter "addnsub1_pipeline_clock" = "NONE"
+    Info (12134): Parameter "zeroacc_pipeline_clock" = "NONE"
+    Info (12134): Parameter "signa_pipeline_clear" = "NONE"
+    Info (12134): Parameter "signb_pipeline_clear" = "NONE"
+    Info (12134): Parameter "addnsub0_pipeline_clear" = "NONE"
+    Info (12134): Parameter "addnsub1_pipeline_clear" = "NONE"
+    Info (12134): Parameter "zeroacc_pipeline_clear" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mac_out_ov82.tdf
+    Info (12023): Found entity 1: mac_out_ov82
+Info (12130): Elaborated megafunction instantiation "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1"
+Info (12133): Instantiated megafunction "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1" with the following parameter:
+    Info (12134): Parameter "MULT_REPRESENTATION_A" = "UNSIGNED"
+    Info (12134): Parameter "MULT_REPRESENTATION_B" = "UNSIGNED"
+    Info (12134): Parameter "MULT_PIPELINE" = "0"
+    Info (12134): Parameter "MULT_CLOCK" = "NONE"
+    Info (12134): Parameter "MULT_CLEAR" = "NONE"
+    Info (12134): Parameter "MULT_INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MULT_INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "dataa_width" = "7"
+    Info (12134): Parameter "datab_width" = "17"
+    Info (12134): Parameter "output_width" = "24"
+    Info (12134): Parameter "dataa_clock" = "NONE"
+    Info (12134): Parameter "datab_clock" = "NONE"
+    Info (12134): Parameter "signa_clock" = "NONE"
+    Info (12134): Parameter "signb_clock" = "NONE"
+    Info (12134): Parameter "output_clock" = "NONE"
+    Info (12134): Parameter "dataa_clear" = "NONE"
+    Info (12134): Parameter "datab_clear" = "NONE"
+    Info (12134): Parameter "signa_clear" = "NONE"
+    Info (12134): Parameter "signb_clear" = "NONE"
+    Info (12134): Parameter "output_clear" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mac_mult_d1h1.tdf
+    Info (12023): Found entity 1: mac_mult_d1h1
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_5tl.tdf
+    Info (12023): Found entity 1: mult_5tl
+Info (12130): Elaborated megafunction instantiation "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_out:mac_out2"
+Info (12133): Instantiated megafunction "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_out:mac_out2" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "OUTPUT_ONLY"
+    Info (12134): Parameter "dataa_width" = "24"
+    Info (12134): Parameter "datab_width" = "0"
+    Info (12134): Parameter "datac_width" = "0"
+    Info (12134): Parameter "datad_width" = "0"
+    Info (12134): Parameter "output_width" = "24"
+    Info (12134): Parameter "signa_clock" = "NONE"
+    Info (12134): Parameter "signb_clock" = "NONE"
+    Info (12134): Parameter "addnsub0_clock" = "NONE"
+    Info (12134): Parameter "addnsub1_clock" = "NONE"
+    Info (12134): Parameter "zeroacc_clock" = "NONE"
+    Info (12134): Parameter "first_adder0_clock" = "NONE"
+    Info (12134): Parameter "first_adder1_clock" = "NONE"
+    Info (12134): Parameter "output_clock" = "NONE"
+    Info (12134): Parameter "signa_clear" = "NONE"
+    Info (12134): Parameter "signb_clear" = "NONE"
+    Info (12134): Parameter "addnsub0_clear" = "NONE"
+    Info (12134): Parameter "addnsub1_clear" = "NONE"
+    Info (12134): Parameter "zeroacc_clear" = "NONE"
+    Info (12134): Parameter "first_adder0_clear" = "NONE"
+    Info (12134): Parameter "first_adder1_clear" = "NONE"
+    Info (12134): Parameter "output_clear" = "NONE"
+    Info (12134): Parameter "signa_pipeline_clock" = "NONE"
+    Info (12134): Parameter "signb_pipeline_clock" = "NONE"
+    Info (12134): Parameter "addnsub0_pipeline_clock" = "NONE"
+    Info (12134): Parameter "addnsub1_pipeline_clock" = "NONE"
+    Info (12134): Parameter "zeroacc_pipeline_clock" = "NONE"
+    Info (12134): Parameter "signa_pipeline_clear" = "NONE"
+    Info (12134): Parameter "signb_pipeline_clear" = "NONE"
+    Info (12134): Parameter "addnsub0_pipeline_clear" = "NONE"
+    Info (12134): Parameter "addnsub1_pipeline_clear" = "NONE"
+    Info (12134): Parameter "zeroacc_pipeline_clear" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mac_out_mv82.tdf
+    Info (12023): Found entity 1: mac_out_mv82
+Info (12130): Elaborated megafunction instantiation "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1"
+Info (12133): Instantiated megafunction "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1" with the following parameter:
+    Info (12134): Parameter "MULT_REPRESENTATION_A" = "UNSIGNED"
+    Info (12134): Parameter "MULT_REPRESENTATION_B" = "UNSIGNED"
+    Info (12134): Parameter "MULT_PIPELINE" = "0"
+    Info (12134): Parameter "MULT_CLOCK" = "NONE"
+    Info (12134): Parameter "MULT_CLEAR" = "NONE"
+    Info (12134): Parameter "MULT_INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MULT_INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "dataa_width" = "17"
+    Info (12134): Parameter "datab_width" = "17"
+    Info (12134): Parameter "output_width" = "34"
+    Info (12134): Parameter "dataa_clock" = "NONE"
+    Info (12134): Parameter "datab_clock" = "NONE"
+    Info (12134): Parameter "signa_clock" = "NONE"
+    Info (12134): Parameter "signb_clock" = "NONE"
+    Info (12134): Parameter "output_clock" = "NONE"
+    Info (12134): Parameter "dataa_clear" = "NONE"
+    Info (12134): Parameter "datab_clear" = "NONE"
+    Info (12134): Parameter "signa_clear" = "NONE"
+    Info (12134): Parameter "signb_clear" = "NONE"
+    Info (12134): Parameter "output_clear" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mac_mult_v2h1.tdf
+    Info (12023): Found entity 1: mac_mult_v2h1
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_nul.tdf
+    Info (12023): Found entity 1: mult_nul
+Info (12130): Elaborated megafunction instantiation "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_out:mac_out2"
+Info (12133): Instantiated megafunction "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_out:mac_out2" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "OUTPUT_ONLY"
+    Info (12134): Parameter "dataa_width" = "34"
+    Info (12134): Parameter "datab_width" = "0"
+    Info (12134): Parameter "datac_width" = "0"
+    Info (12134): Parameter "datad_width" = "0"
+    Info (12134): Parameter "output_width" = "34"
+    Info (12134): Parameter "signa_clock" = "NONE"
+    Info (12134): Parameter "signb_clock" = "NONE"
+    Info (12134): Parameter "addnsub0_clock" = "NONE"
+    Info (12134): Parameter "addnsub1_clock" = "NONE"
+    Info (12134): Parameter "zeroacc_clock" = "NONE"
+    Info (12134): Parameter "first_adder0_clock" = "NONE"
+    Info (12134): Parameter "first_adder1_clock" = "NONE"
+    Info (12134): Parameter "output_clock" = "NONE"
+    Info (12134): Parameter "signa_clear" = "NONE"
+    Info (12134): Parameter "signb_clear" = "NONE"
+    Info (12134): Parameter "addnsub0_clear" = "NONE"
+    Info (12134): Parameter "addnsub1_clear" = "NONE"
+    Info (12134): Parameter "zeroacc_clear" = "NONE"
+    Info (12134): Parameter "first_adder0_clear" = "NONE"
+    Info (12134): Parameter "first_adder1_clear" = "NONE"
+    Info (12134): Parameter "output_clear" = "NONE"
+    Info (12134): Parameter "signa_pipeline_clock" = "NONE"
+    Info (12134): Parameter "signb_pipeline_clock" = "NONE"
+    Info (12134): Parameter "addnsub0_pipeline_clock" = "NONE"
+    Info (12134): Parameter "addnsub1_pipeline_clock" = "NONE"
+    Info (12134): Parameter "zeroacc_pipeline_clock" = "NONE"
+    Info (12134): Parameter "signa_pipeline_clear" = "NONE"
+    Info (12134): Parameter "signb_pipeline_clear" = "NONE"
+    Info (12134): Parameter "addnsub0_pipeline_clear" = "NONE"
+    Info (12134): Parameter "addnsub1_pipeline_clear" = "NONE"
+    Info (12134): Parameter "zeroacc_pipeline_clear" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mac_out_pv82.tdf
+    Info (12023): Found entity 1: mac_out_pv82
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le7a[17]"
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[12]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[11]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[10]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[9]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le4a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le4a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le5a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le5a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le5a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le5a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le6a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le6a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le6a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le6a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le6a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le6a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le7a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le7a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le7a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le7a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le7a[12]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le7a[11]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le4a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le6a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le6a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le6a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le7a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le7a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le7a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le7a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le7a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le7a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le7a[12]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le7a[11]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le8a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le8a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le8a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le8a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le8a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le8a[12]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le8a[11]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le8a[10]"
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[12]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[11]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[10]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[9]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[8]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[7]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[6]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le10a[5]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[12]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[11]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[10]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[9]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[8]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[7]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[6]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[5]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[4]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le11a[3]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[8]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[7]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[6]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[5]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[4]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[3]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[2]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le12a[1]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le4a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le6a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le6a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le6a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le7a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le7a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le7a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le7a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le7a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le7a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le7a[12]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le7a[11]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[12]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[11]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[10]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le8a[9]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[14]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[13]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[12]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[11]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[10]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[9]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[8]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le9a[7]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le4a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le5a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le5a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le5a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le5a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le6a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le6a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le6a[14]"
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le4a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le5a[18]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le5a[17]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le5a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le5a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le6a[16]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le6a[15]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_v2h1:auto_generated|mult_nul:mult1|le6a[14]"
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le4a[1]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_d1h1:auto_generated|mult_5tl:mult1|le4a[0]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le4a[1]"
+        Warning (14320): Synthesized away node "DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1|mac_mult_f1h1:auto_generated|mult_7tl:mult1|le4a[0]"
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13014): Ignored 501 buffer(s)
+    Info (13016): Ignored 17 CARRY_SUM buffer(s)
+    Info (13019): Ignored 484 SOFT buffer(s)
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/output_files/CA6_Quartus.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 441 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 28 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 395 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 174 warnings
+    Info: Peak virtual memory: 4669 megabytes
+    Info: Processing ended: Sat Jan 04 00:48:16 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/output_files/CA6_Quartus.map.smsg.
+
+

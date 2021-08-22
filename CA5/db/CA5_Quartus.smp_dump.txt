@@ -1,0 +1,8 @@
+
+State Machine - |CA5_Quartus|Controller:inst|ns
+Name ns.011 ns.010 ns.001 ns.000 ns.100 
+ns.000 0 0 0 0 0 
+ns.001 0 0 1 1 0 
+ns.010 0 1 0 1 0 
+ns.011 1 0 0 1 0 
+ns.100 0 0 0 1 1 

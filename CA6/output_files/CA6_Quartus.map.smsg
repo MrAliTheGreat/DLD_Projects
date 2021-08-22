@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at DataPath.v(3): object "rom_i" differs only in case from object "ROM_i" in the same scope
+Info (10281): Verilog HDL Declaration information at DataPath.v(3): object "rom_iplus" differs only in case from object "ROM_iplus" in the same scope

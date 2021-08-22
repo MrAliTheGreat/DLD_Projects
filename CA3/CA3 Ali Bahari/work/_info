@@ -1,0 +1,253 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA3_Main
+vcomparator_behavioural
+!i10b 1
+!s100 SLJO@ecM]UJ;in0:og;j63
+IXEdeRnLGJ2Jm58a6hJXQj3
+V<jCL]W8MF?5:[YBR?g`Ob2
+Z1 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA3 Ali Bahari
+Z2 w1573076122
+Z3 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3 Ali Bahari/CA3_Verilog.v
+Z4 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3 Ali Bahari/CA3_Verilog.v
+L0 278
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1573076126.312000
+Z7 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3 Ali Bahari/CA3_Verilog.v|
+Z8 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA3 Ali Bahari/CA3_Verilog.v|
+!s101 -O0
+Z9 o-work work -O0
+vcomparator_gate
+!i10b 1
+!s100 SB4?6Y<W;IXNceLecIhiT0
+Ij^bQT8IDmhhVmcL_aHah[2
+V[7>Jn8i`9Y<49>OUZJjmM2
+R1
+R2
+R3
+R4
+L0 211
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vcomplement
+!i10b 1
+!s100 JLc>AE3lk>Md=;aLUFNY92
+IDCziT15Neb:EddNRXnKjc0
+V[j>Zej<ZVRDeY>j<b>;k62
+R1
+R2
+R3
+R4
+L0 24
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vcomplement_assign
+!i10b 1
+!s100 d8Kz@U4>@[cIV8o_X>o]R1
+IB2Ynae8?4RRb>SZLeE]1l0
+VBQFOzj2lfJ]Pj3<NM`o^b1
+R1
+R2
+R3
+R4
+L0 248
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vencoder
+!i10b 1
+!s100 QOfHoOXn2FLE3TRJ:Wgn70
+IVb2Z8^ScWg5`0K5_5c2L=0
+V;i6IhnXJ32P7]=YB_PBUe2
+R1
+R2
+R3
+R4
+L0 67
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+veq_ae_d_comparator
+!i10b 1
+!s100 WSdS2PR^;UfI^mH;5z<KI1
+IA:ozn[hGOAUY7N3gYO]DK2
+V=AB39TEz4kYJWL8OB^Sh93
+R1
+R2
+R3
+R4
+L0 115
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vequal_comp
+!i10b 1
+!s100 o^fzGY@93@8>>@_?;OYOT3
+InEK3bFjU9S4@dS]INZl=G0
+Vcd672ALj6oeJWnB2PjR2Y0
+R1
+R2
+R3
+R4
+L0 51
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vgt_comp_component
+!i10b 1
+!s100 MKZDgj1YYQ_K0M1:go_m>1
+IT6b0VUXGE7AHbQ<Q0LKcR0
+VPmVE84l:BWS0GgOz9_J;g1
+R1
+R2
+R3
+R4
+L0 157
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vgt_comparator
+!i10b 1
+!s100 bkC^IZE8n2Y^2T7_B:7;f3
+IGii`8CX;FBaTjCE4S^Tcg2
+Vh9LT^L4mb1]ljUa2GXWha3
+R1
+R2
+R3
+R4
+L0 178
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vincrementer
+!i10b 1
+!s100 ;H_39L6GjGUWZ0<VQN:8S0
+IdFoBFn??:o4_jQYQ:Abf21
+VOUTObg@Fio]h<z?>kKE4B3
+R1
+R2
+R3
+R4
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vincrementer_assign_component
+!i10b 1
+!s100 lAnKgfY>mQzVc;m`Ah_;;2
+IgbGjXle^EQiRc^T=k8YK;3
+V:I`:2_df[JlWVRR>C^<8O0
+R1
+R2
+R3
+R4
+L0 232
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vmagnitude_diff_component
+!i10b 1
+!s100 gkGT8EQi8C`9O2]WK5UaX1
+IFk256ogGAQ^O]5m4]cDfV0
+VdPRN0CZC?:iUX6GdIbFA_0
+R1
+R2
+R3
+R4
+L0 97
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vtestTB
+!i10b 1
+!s100 9zZMiOH99?WY@T0P@3f?X2
+IjiOFT_mDE=V6?gEJ48;6@0
+Vj45]H_g<gC]3[1?fkT`JM2
+R1
+R2
+R3
+R4
+L0 335
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+ntest@t@b

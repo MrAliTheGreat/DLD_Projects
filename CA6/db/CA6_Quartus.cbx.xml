@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CA6_Quartus">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_pv82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_d1h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2" CBX_FILE_NAME="mult_8jt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0|mult_4ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_v2h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1" CBX_FILE_NAME="mult_6jt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult1|mult_6jt:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_mv82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult2|mult_8jt:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_f1h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6_Quartus|DataPath:inst11|Multiply:cut_multiply|lpm_mult:Mult0" CBX_FILE_NAME="mult_4ht.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

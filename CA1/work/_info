@@ -1,0 +1,317 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vdemulti2
+!i10b 1
+Z1 !s100 iCO1;>PC871V3kBNGe:UN0
+Z2 IJZMieh[]36f[i0GME5;kc0
+Z3 ViW_bVkeR]mJX2Nof9W7Y51
+Z4 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA1
+Z5 w1570653107
+Z6 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA1/CA1.v
+Z7 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA1/CA1.v
+L0 67
+Z8 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z9 !s108 1570653117.053000
+Z10 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA1/CA1.v|
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA1/CA1.v|
+!s101 -O0
+Z12 o-work work -O0
+vdemulti2_gate
+!i10b 1
+Z13 !s100 g=Haf^dlIMhah3;44Pi@?1
+Z14 I8IiD[z6S0M1j5aOIiE6PG2
+Z15 V4[N1GZ:`K49HCdQHAVCAH3
+R4
+R5
+R6
+R7
+Z16 L0 139
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+vdemulti2_gateTB
+!i10b 1
+Z17 !s100 kK1EE]_Z];m:]?SHNdM?e3
+Z18 IJW3>MX[L:mbX4R1I@V`:^3
+Z19 VK7Jo:nNUHgg0i;;d1moac3
+R4
+R5
+R6
+R7
+Z20 L0 148
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+Z21 ndemulti2_gate@t@b
+vdemulti2TB
+!i10b 1
+Z22 !s100 I7Qg_6@52hY?ogC;Xf?XR0
+Z23 I=VIEeYk=7:lG?NZbk6kV60
+Z24 V3YL?IAnW[SIk1[:_?LNLT2
+R4
+R5
+R6
+R7
+L0 76
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+Z25 ndemulti2@t@b
+vdemulti4
+!i10b 1
+Z26 !s100 74HcLFOP<WB47KPGIz?hS2
+Z27 IWklZ[fd5_2X7d9JlkOzZP3
+Z28 VNIZUZfMHgH8QkZen7478X3
+R4
+R5
+R6
+R7
+Z29 L0 102
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+vdemulti4_gate
+!i10b 1
+Z30 !s100 9lg^ZGMDe23mEK:NOje?R3
+Z31 I8mIkXRlnR?09_68X>m`zM2
+Z32 V54G?A6Tn<V:PAg;4LP6ii1
+R4
+R5
+R6
+R7
+Z33 L0 181
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+vdemulti4_gate_allTB
+!i10b 1
+Z34 !s100 a2ejcN5<h637>KX@Rk5gP0
+Z35 I9DCDb1Wm_TP994?YjllGd1
+Z36 VAG8Z_mh1QafJJc[1U<^5O3
+R4
+R5
+R6
+R7
+Z37 L0 239
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+Z38 ndemulti4_gate_all@t@b
+vdemulti4_gate_flat
+!i10b 1
+Z39 !s100 je0TY>83APzGL@QI<d9I=3
+Z40 I9TCIHF@eUSRI>3fGXS[6Z1
+Z41 Vg403i`7H=[YVL2^gB]Z`Y2
+R4
+R5
+R6
+R7
+Z42 L0 226
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+vdemulti4_gateTB
+!i10b 1
+Z43 !s100 X0Eem9M8i_[1o=7DajHL13
+Z44 I3_N5>fKeJLT8fTQn77znh2
+Z45 VX1D?mklJCc4Flf3_aFz7D0
+R4
+R5
+R6
+R7
+Z46 L0 189
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+Z47 ndemulti4_gate@t@b
+vdemulti4TB
+!i10b 1
+!s100 Z^ne>4efYT5U<5cZHc]M42
+IRaYQB_T>>QMTDbYcjN?Xi1
+Z48 V8bV<4ej8`4hHJT]1BW9WD2
+R4
+R5
+R6
+R7
+Z49 L0 110
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+Z50 ndemulti4@t@b
+vdemultiTB
+Z51 !s100 63>VdE3^MXP[gQhgCcIb:1
+Z52 I>1SnC5WC[EJ6if6X6^Jl:2
+Z53 Vf<8bX>D2A0cE48GG<D6b;2
+R4
+Z54 w1570451303
+R6
+R7
+L0 59
+R8
+r1
+31
+Z55 !s108 1570451306.529000
+Z56 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA1/CA1.v|
+R11
+R12
+Z57 ndemulti@t@b
+!i10b 1
+!s85 0
+!s101 -O0
+vinv_nor2_3TB
+!i10b 1
+Z58 !s100 fo9>67cKPbT[?L4[`OH9W1
+Z59 I@M_k4>kNeG3f1_H5Ajk;B2
+Z60 V54b]1B<MC`6GTVKJ^==P`0
+R4
+R5
+R6
+R7
+L0 38
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+Z61 ninv_nor2_3@t@b
+vinvclass
+!i10b 1
+Z62 !s100 WBV@^kk56_b>RRGAOYAeD3
+Z63 ICheQSm8=BHM?88mo=SVIC2
+Z64 V3fBUdKf:K00nVI>fJlG420
+R4
+R5
+R6
+R7
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+vnor2
+!i10b 1
+Z65 !s100 lef<c]zCnXjlGHJ?X^j>90
+Z66 IaTgiPMJ6XGB4QQ;7SK98E0
+Z67 VXca[ch5;OhZcKfkelh9z?1
+R4
+R5
+R6
+R7
+L0 14
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+vnor3
+!i10b 1
+Z68 !s100 C:81I:dVUWB711E]noSE63
+Z69 IcgU4e=e[W>`78Ki5Y@3VO2
+Z70 VjAEoc@ZzER<zG]9MdFH8L3
+R4
+R5
+R6
+R7
+L0 25
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+vTB
+Z71 IY19B:9=LPP@1]Nio6aNPA1
+Z72 Vc<=32996OT2f`M7E_UhYX1
+R4
+Z73 w1570639100
+R6
+R7
+L0 34
+R8
+r1
+31
+Z74 !s108 1570639104.769000
+R56
+R11
+R12
+n@t@b
+Z75 !s100 8d<VgjPUL[RCJ5Rz^AP8;0
+!i10b 1
+!s85 0
+!s101 -O0

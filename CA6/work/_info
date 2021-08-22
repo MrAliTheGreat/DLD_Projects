@@ -1,0 +1,323 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA5\simulation\modelsim
+vAdder
+Z1 !s100 lgN:>hM5DHXl^@@P^5IkD1
+Z2 II`e[D]Y0VZ2K0NV8NcF?_0
+Z3 VF5iOb;I7RFmkA`FR3W5A_1
+Z4 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA6
+Z5 w1578077004
+Z6 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Adder.v
+Z7 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Adder.v
+L0 2
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Adder.v|
+Z10 o-work work -O0
+Z11 n@adder
+Z12 !s108 1578126183.722000
+Z13 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Adder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCircuit
+Z14 !s100 gj>>G@M7iijGR0O9gHi3B2
+Z15 I`z352JHXQ=bDM5592Y8Jz3
+Z16 V?]2nacQ_4]:zTI>c5k2Ic3
+R4
+Z17 w1578118202
+Z18 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Circuit.v
+Z19 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Circuit.v
+L0 1
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Circuit.v|
+R10
+Z21 n@circuit
+Z22 !s108 1578126183.905000
+Z23 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Circuit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vController
+Z24 !s100 D8IIZ[9BE=Q>mJh`X?XDJ1
+Z25 IZzg[DeS@fPIOcV:fo4C_D2
+Z26 V31ajUXIGfoZN6`Toe4nBW3
+R4
+Z27 w1578117352
+Z28 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Controller.v
+Z29 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Controller.v
+L0 1
+R8
+r1
+31
+Z30 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Controller.v|
+R10
+Z31 n@controller
+Z32 !s108 1578126183.311000
+Z33 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Controller.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcontroller_TB
+Z34 !s100 BIg=9[Cn8KE9F?RB>hcE[2
+Z35 IZUUmiJh91:TaYk`<XG[ej2
+Z36 V3Y5FB53[Ii9ZE<BDMcCld0
+R4
+Z37 w1578118132
+Z38 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ControllerTB.v
+Z39 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ControllerTB.v
+L0 1
+R8
+r1
+31
+Z40 !s108 1578126183.802000
+Z41 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ControllerTB.v|
+Z42 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ControllerTB.v|
+R10
+Z43 ncontroller_@t@b
+!i10b 1
+!s85 0
+!s101 -O0
+vDataPath
+Z44 !s100 Yd>lEI^?Hn<d_bg0BzMl81
+Z45 I8^4jPSja3WPNDmaVz`nF80
+Z46 VNWCff`6Vd88bnlR12OX9E0
+R4
+Z47 w1578081310
+Z48 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/DataPath.v
+Z49 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/DataPath.v
+L0 1
+R8
+r1
+31
+Z50 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/DataPath.v|
+R10
+Z51 n@data@path
+Z52 !s108 1578126183.383000
+Z53 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/DataPath.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDataPath_TB
+Z54 !s100 CoRz[o[5[m=_S=TJjB_7R3
+Z55 I5NXX_7T@eFfaHoo`X9TX80
+Z56 Vmmh[O[@AO@h58Ij7bDmnz3
+R4
+R37
+R38
+R39
+L0 88
+R8
+r1
+31
+R40
+R41
+R42
+R10
+Z57 n@data@path_@t@b
+!i10b 1
+!s85 0
+!s101 -O0
+vinput_wrapper
+Z58 !s100 D7QN=4X:kRh?_RmznLUm<0
+Z59 Izd^T=JEH06E^4J7;_:=3I2
+Z60 V5lBAJ6VUQcjBO[D6>Dn]G1
+R4
+Z61 w1578122269
+Z62 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/InputWrapper.v
+Z63 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/InputWrapper.v
+L0 2
+R8
+r1
+31
+Z64 !s108 1578126183.995000
+Z65 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/InputWrapper.v|
+Z66 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/InputWrapper.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vinput_wrapper_TB
+Z67 !s100 zn^nKNOI`jjcjlh9VbLb<3
+Z68 IQObYz=iK7KSXRIMBz9cTf2
+Z69 V<B8fU5T1fTG^[aPXbJR2L3
+R4
+R61
+R62
+R63
+L0 54
+R8
+r1
+31
+R64
+R65
+R66
+R10
+Z70 ninput_wrapper_@t@b
+!i10b 1
+!s85 0
+!s101 -O0
+vMultiply
+Z71 !s100 6OE19h<kla[QCV]oTge420
+Z72 I[:T?7>Ue:@bBEEUoafkjO2
+Z73 V[`6Fn;8WNaXg1ao4^cXEc0
+R4
+Z74 w1578076759
+Z75 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Multiply.v
+Z76 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Multiply.v
+L0 2
+R8
+r1
+31
+Z77 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Multiply.v|
+R10
+Z78 n@multiply
+Z79 !s108 1578126183.629000
+Z80 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Multiply.v|
+!i10b 1
+!s85 0
+!s101 -O0
+voutput_wrapper
+!i10b 1
+Z81 !s100 [UeW;?dBeR^aiDN]5TYBI2
+Z82 IA?0g65W2ZlBS[e0lT7A6l1
+Z83 VD3bFMU:LAJOl@hUZORQWW3
+R4
+Z84 w1578126179
+Z85 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/OutputWrapper.v
+Z86 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/OutputWrapper.v
+L0 2
+R8
+r1
+!s85 0
+31
+Z87 !s108 1578126184.098000
+Z88 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/OutputWrapper.v|
+Z89 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/OutputWrapper.v|
+!s101 -O0
+R10
+voutput_wrapper_TB
+!i10b 1
+!s100 <om1]NhVWnhX=HTWjHRVH2
+IjW2DLhPJC`oQNPSKmXcnY3
+Z90 V06acJe=gahfHe^RWneTIm3
+R4
+R84
+R85
+R86
+L0 56
+R8
+r1
+!s85 0
+31
+R87
+R88
+R89
+!s101 -O0
+R10
+Z91 noutput_wrapper_@t@b
+vRegister
+Z92 !s100 A41LTRbZmHDgiX>o0WOE20
+Z93 ISP`_l@ma@:o9J<42bL=Hl3
+Z94 V<DU[LcX8Y8dn^dh45oC7P1
+R4
+Z95 w1578076047
+Z96 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register.v
+Z97 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register.v
+L0 2
+R8
+r1
+31
+Z98 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register.v|
+R10
+Z99 n@register
+Z100 !s108 1578126183.164000
+Z101 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister16
+Z102 !s100 fO7QN[CobIiSoBM`@V_e73
+Z103 IlL=Oo6QE724]QT[dj4fen3
+Z104 V2Gg_J9Cn9QK>:B1eOzRZR2
+R4
+Z105 w1578057978
+R96
+R97
+L0 2
+R8
+r1
+31
+R98
+R10
+Z106 n@register16
+Z107 !s108 1578061070.542000
+R101
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister8
+Z108 !s100 CNn[CAAg^9d94;dK[7iLF3
+Z109 I<2lD]Yb9W053ameD6PTEA3
+Z110 VgTP3naV9Uc0:mc7^79U4Z0
+R4
+Z111 w1578080730
+Z112 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register8.v
+Z113 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register8.v
+L0 2
+R8
+r1
+31
+Z114 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register8.v|
+R10
+Z115 n@register8
+Z116 !s108 1578126183.543000
+Z117 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register8.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister_init
+Z118 !s100 ZjC=K3IP_Ga[2_0;_20KE3
+Z119 Ic:]]?c4C`L1[1c28Glz9O1
+Z120 VoB09@2:dnXhSZF9L4VFaU3
+R4
+Z121 w1578081254
+Z122 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register_init.v
+Z123 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register_init.v
+L0 2
+R8
+r1
+31
+Z124 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register_init.v|
+R10
+Z125 n@register_init
+Z126 !s108 1578126183.462000
+Z127 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register_init.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vROMi
+Z128 !s100 Y4hIFGBMdn`2mNh8igNXV0
+Z129 IIL3lNTi?LTl9eESR]gT^K0
+Z130 VnP^6i6ZzBiAlVY7jo0hfO0
+R4
+Z131 w1578075498
+Z132 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ROMi.v
+Z133 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ROMi.v
+L0 2
+R8
+r1
+31
+Z134 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ROMi.v|
+R10
+Z135 n@r@o@mi
+Z136 !s108 1578126183.240000
+Z137 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ROMi.v|
+!i10b 1
+!s85 0
+!s101 -O0

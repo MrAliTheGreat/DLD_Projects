@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA5
+vCA5_Quartus
+!i10b 1
+Z1 !s100 lU=JEEQGf3fW>FcBF<bP>3
+Z2 IC2J<mliIZ;;0V1gd?2ILh0
+Z3 VR1EV9VPhS52MF7ghAHn?Z2
+Z4 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA5\simulation\modelsim
+Z5 w1577350108
+Z6 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/simulation/modelsim/CA5_Quartus.vo
+Z7 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/simulation/modelsim/CA5_Quartus.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1577350576.814000
+!s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/simulation/modelsim/CA5_Quartus.vo|
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/simulation/modelsim/CA5_Quartus.vo|
+!s101 -O0
+Z10 o-work work -O0
+Z11 n@c@a5_@quartus
+vController
+Z12 !s100 B@@6O9FiahCd127KP@Xaa2
+Z13 I`OPkAS<WL1ESiPmiaBRJe2
+Z14 VRme?7711lTD<iQdk=Y30z2
+R4
+Z15 w1577349704
+Z16 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/Controller.v
+Z17 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/Controller.v
+L0 1
+R8
+r1
+31
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/Controller.v|
+R10
+Z19 n@controller
+Z20 !s108 1577350576.626000
+Z21 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/Controller.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcontroller_TB
+Z22 !s100 fkg:bTKW0]lZiBkeE>US`3
+Z23 I`h6ba`=8Gd;lJfbTZ^;[j0
+Z24 V3Y5FB53[Ii9ZE<BDMcCld0
+R4
+Z25 w1577349715
+Z26 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/TestBench.v
+Z27 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/TestBench.v
+Z28 L0 139
+R8
+r1
+31
+Z29 !s108 1577350576.702000
+Z30 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/TestBench.v|
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/TestBench.v|
+R10
+Z32 ncontroller_@t@b
+!i10b 1
+!s85 0
+!s101 -O0
+vFinal_TestBench
+Z33 !s100 `Kcn5<HO;6MIa5Nd[?]BV3
+Z34 Io[?nA_LEL=3PYohSGcWHi1
+Z35 VI^2Td7BGd8UzDiHUl6E2T2
+R4
+Z36 w1577347761
+Z37 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/simulation/modelsim/Final_TestBench.v
+Z38 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/simulation/modelsim/Final_TestBench.v
+L0 2
+R8
+r1
+31
+Z39 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/simulation/modelsim/Final_TestBench.v|
+R10
+Z40 n@final_@test@bench
+Z41 !s108 1577350576.552000
+Z42 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA5/simulation/modelsim/Final_TestBench.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsmbs_TB
+Z43 !s100 KJX:^`ILK<<2_^<Nmh0[C2
+Z44 I7@gbmo7PoeCC;bVoZl?KE1
+Z45 V:Wno4>^UdC?La@UWIjm4f1
+R4
+R25
+R26
+R27
+L0 2
+R8
+r1
+31
+R29
+R30
+R31
+R10
+Z46 nsmbs_@t@b
+!i10b 1
+!s85 0
+!s101 -O0
+vsreg6_TB
+Z47 !s100 0PWCL^d;@eMV<dk]GhRFa2
+Z48 Ibe9CQIBAJhTah[?:6Z@];3
+Z49 V3cgec7OZL5o?32e[ca;1a1
+R4
+R25
+R26
+R27
+L0 59
+R8
+r1
+31
+R29
+R30
+R31
+R10
+Z50 nsreg6_@t@b
+!i10b 1
+!s85 0
+!s101 -O0

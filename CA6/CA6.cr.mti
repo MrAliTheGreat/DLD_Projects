@@ -1,0 +1,89 @@
+{C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ROMi.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ROMi.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ROMi
+
+Top level modules:
+	ROMi
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Multiply.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Multiply.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Multiply
+
+Top level modules:
+	Multiply
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Adder.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Adder.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register_init.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register_init.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Register_init
+
+Top level modules:
+	Register_init
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/InputWrapper.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/InputWrapper.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module input_wrapper
+-- Compiling module input_wrapper_TB
+
+Top level modules:
+	input_wrapper_TB
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Circuit.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Circuit.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Circuit
+
+Top level modules:
+	Circuit
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Controller.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Controller.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register8.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register8.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Register8
+
+Top level modules:
+	Register8
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/DataPath.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/DataPath.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataPath
+
+Top level modules:
+	DataPath
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/OutputWrapper.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/OutputWrapper.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module output_wrapper
+-- Compiling module output_wrapper_TB
+
+Top level modules:
+	output_wrapper_TB
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ControllerTB.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/ControllerTB.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module controller_TB
+-- Compiling module DataPath_TB
+
+Top level modules:
+	controller_TB
+	DataPath_TB
+
+} {} {}} {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA6/Register.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}}

@@ -1,0 +1,26 @@
+{C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA1/CA1.v} {1 {vlog -work work {C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA1/CA1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module invclass
+-- Compiling module nor2
+-- Compiling module nor3
+-- Compiling module inv_nor2_3TB
+-- Compiling module demulti2
+-- Compiling module demulti2TB
+-- Compiling module demulti4
+-- Compiling module demulti4TB
+-- Compiling module demulti2_gate
+-- Compiling module demulti2_gateTB
+-- Compiling module demulti4_gate
+-- Compiling module demulti4_gateTB
+-- Compiling module demulti4_gate_flat
+-- Compiling module demulti4_gate_allTB
+
+Top level modules:
+	inv_nor2_3TB
+	demulti2TB
+	demulti4TB
+	demulti2_gateTB
+	demulti4_gateTB
+	demulti4_gate_allTB
+
+} {} {}}

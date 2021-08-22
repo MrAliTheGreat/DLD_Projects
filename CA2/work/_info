@@ -1,0 +1,278 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vbroadcaster
+!i10b 1
+Z1 !s100 LPEB]?i>SM2fXELHZclQK3
+Z2 I?cZ<AXJ`MEnU8ADE[R3;c3
+Z3 V28U3fXm9K]PmB:=]UOIS31
+Z4 dC:\Users\rasou\Desktop\University\University Courses\Digital Logic Design\Computer Assignments\CA2
+Z5 w1571865292
+Z6 8C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA2/CA2_Verilog.v
+Z7 FC:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA2/CA2_Verilog.v
+Z8 L0 142
+Z9 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z10 !s108 1571865296.188000
+Z11 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA2/CA2_Verilog.v|
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA2/CA2_Verilog.v|
+!s101 -O0
+Z13 o-work work -O0
+vbroadcaster_assign
+!i10b 1
+Z14 !s100 Sa0PB^=alMHXiKSegGhQm0
+Z15 I[Rd8l3ckGnn8I7lX=;m]31
+Z16 V@_gg4Vd[JX=;NKgj=nAf01
+R4
+R5
+R6
+R7
+Z17 L0 153
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+vbroadcasterTB
+!i10b 1
+!s100 VO9f]Y9DFG[6[597DWBAO0
+INKL06lQRb[KXkOE<`i=fV1
+Z18 V`A:aDoIS7loSiT7deJF6R2
+R4
+R5
+R6
+R7
+Z19 L0 182
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+Z20 nbroadcaster@t@b
+vbrodcaster
+Z21 IobZoE[NVeH9VU48g`?]hf1
+Z22 VR>jo=nSzLTNSW7`gc1cX32
+R4
+Z23 w1571731499
+R6
+R7
+Z24 L0 112
+R9
+r1
+31
+Z25 !s108 1571731503.296000
+Z26 !s107 C:/Users/rasou/Desktop/University/University Courses/Digital Logic Design/Computer Assignments/CA2/CA2_Verilog.v|
+R12
+R13
+Z27 !s100 fzRlRKHR?4oh`[nNl6<]H2
+!i10b 1
+!s85 0
+!s101 -O0
+vdemultiplexer4_selectTB
+Z28 !s100 [onK2lLhQ5Jcd4fHmME870
+Z29 IVfA@W[U7=YGV`z77aI;l<2
+Z30 VZAcH_k_NXel:iF^X=BU_H3
+R4
+Z31 w1571689443
+R6
+R7
+L0 38
+R9
+r1
+31
+Z32 !s108 1571689445.727000
+R26
+R12
+R13
+Z33 ndemultiplexer4_select@t@b
+!i10b 1
+!s85 0
+!s101 -O0
+vdemultiplexer_2select
+!i10b 1
+Z34 !s100 AWc`SK5dmH8z9<JEdzjng3
+Z35 IREcb0I3RS6D_=2?=Go:bg2
+Z36 VePME3jh3<hRT`A6e7[n;z3
+R4
+R5
+R6
+R7
+L0 88
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+vdemultiplexer_2select_assign
+!i10b 1
+Z37 !s100 LNhRc@h[KY`al?[O1QT^03
+Z38 I6l<KQo6zfTdNcJ3`O<EzA2
+Z39 VHbWkcO2_Ne8oI79<1W6z[1
+R4
+R5
+R6
+R7
+Z40 L0 102
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+vdemultiplexer_2selectTB
+!i10b 1
+Z41 !s100 VBS_KeVb`7ch]i2F8<<VY3
+Z42 IS[UE[N_eFT3R>2GKWL6=80
+Z43 VQ1V>ebe5E]@]S6TW<8XFo0
+R4
+R5
+R6
+R7
+Z44 L0 114
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+Z45 ndemultiplexer_2select@t@b
+vdemultiplexer_4Select
+!i10b 1
+Z46 !s100 W8DY:[<iV4oh=?;f^EjP<0
+Z47 I<B?idN6PJzeXAbPVF1hDh3
+Z48 V@;c7dla`hgjId[_h0S<G>0
+R4
+R5
+R6
+R7
+L0 16
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+Z49 ndemultiplexer_4@select
+vdemultiplexer_4Select_assign
+!i10b 1
+Z50 !s100 mm]N5m_7^kTVRBc>cVaPa3
+Z51 Ina8ak;X0;G`d^`X4MKDRi3
+Z52 VT@djX7jdIK<9PNah3@K>b3
+R4
+R5
+R6
+R7
+L0 31
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+Z53 ndemultiplexer_4@select_assign
+vdemultiplexer_4selectTB
+!i10b 1
+Z54 !s100 hc0@=Kf7:8nh5Q47P[Y<60
+Z55 IABZ9^FaGV`jjEYfd8GVcY2
+Z56 V9abmP^ZF1zR:9L2aeW?NS3
+R4
+R5
+R6
+R7
+L0 45
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+Z57 ndemultiplexer_4select@t@b
+vdemultiplexerTB
+Z58 !s100 V6H_EgDfX_hR08_E05i5>1
+Z59 I>1?F08<hi8XiG4;mchl@d0
+Z60 VRm=Ia2`_HC`c7c8dMD]8P2
+R4
+Z61 w1571634278
+R6
+R7
+L0 38
+R9
+r1
+31
+Z62 !s108 1571634284.894000
+R26
+R12
+R13
+Z63 ndemultiplexer@t@b
+!i10b 1
+!s85 0
+!s101 -O0
+vnor2
+!i10b 1
+Z64 !s100 e8^fV_oOLadT94S]>ojf32
+Z65 IOW@OIzV`O[`CzHJ2NPY;53
+Z66 VXca[ch5;OhZcKfkelh9z?1
+R4
+R5
+R6
+R7
+L0 5
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+vnor3
+!i10b 1
+Z67 !s100 n3BbC>@:SbhLgOnizz<Jg0
+Z68 Iil9LOBU@2]C_l8TSOH6_V3
+Z69 VjAEoc@ZzER<zG]9MdFH8L3
+R4
+R5
+R6
+R7
+L0 75
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
